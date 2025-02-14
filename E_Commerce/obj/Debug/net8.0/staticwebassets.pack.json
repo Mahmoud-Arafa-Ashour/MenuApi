@@ -1,0 +1,69 @@
+{
+  "Files": [
+    {
+      "Id": "C:\\Users\\HP\\source\\repos\\E_Commerce\\E_Commerce\\wwwroot\\uploads\\16407336-e62a-4987-ab06-2722cdd5f384.jpg",
+      "PackagePath": "staticwebassets\\uploads\\16407336-e62a-4987-ab06-2722cdd5f384.jpg"
+    },
+    {
+      "Id": "C:\\Users\\HP\\source\\repos\\E_Commerce\\E_Commerce\\wwwroot\\uploads\\1a37da3c-2fd2-44eb-ab55-47f1201670f3.jpg",
+      "PackagePath": "staticwebassets\\uploads\\1a37da3c-2fd2-44eb-ab55-47f1201670f3.jpg"
+    },
+    {
+      "Id": "C:\\Users\\HP\\source\\repos\\E_Commerce\\E_Commerce\\wwwroot\\uploads\\65f1364a-4585-41c9-8585-95c5ddcdc8ea.jpg",
+      "PackagePath": "staticwebassets\\uploads\\65f1364a-4585-41c9-8585-95c5ddcdc8ea.jpg"
+    },
+    {
+      "Id": "C:\\Users\\HP\\source\\repos\\E_Commerce\\E_Commerce\\wwwroot\\uploads\\77d9ad6c-adad-42a6-9e68-32e1820efea0.jpg",
+      "PackagePath": "staticwebassets\\uploads\\77d9ad6c-adad-42a6-9e68-32e1820efea0.jpg"
+    },
+    {
+      "Id": "C:\\Users\\HP\\source\\repos\\E_Commerce\\E_Commerce\\wwwroot\\uploads\\7b238140-87c2-4664-931a-ae29d1db37b1.jpg",
+      "PackagePath": "staticwebassets\\uploads\\7b238140-87c2-4664-931a-ae29d1db37b1.jpg"
+    },
+    {
+      "Id": "C:\\Users\\HP\\source\\repos\\E_Commerce\\E_Commerce\\wwwroot\\uploads\\8aecf777-3fa6-49d6-b5be-198db9f08c79.jpg",
+      "PackagePath": "staticwebassets\\uploads\\8aecf777-3fa6-49d6-b5be-198db9f08c79.jpg"
+    },
+    {
+      "Id": "C:\\Users\\HP\\source\\repos\\E_Commerce\\E_Commerce\\wwwroot\\uploads\\db29b692-e27f-4690-a631-18b3993b8496.jpg",
+      "PackagePath": "staticwebassets\\uploads\\db29b692-e27f-4690-a631-18b3993b8496.jpg"
+    },
+    {
+      "Id": "C:\\Users\\HP\\source\\repos\\E_Commerce\\E_Commerce\\wwwroot\\uploads\\dc88bf24-e0d7-47c4-ab81-be70663d0d6e.jpg",
+      "PackagePath": "staticwebassets\\uploads\\dc88bf24-e0d7-47c4-ab81-be70663d0d6e.jpg"
+    },
+    {
+      "Id": "C:\\Users\\HP\\source\\repos\\E_Commerce\\E_Commerce\\wwwroot\\uploads\\df2aac3f-d450-4e04-9035-b4d8c4950101.jpg",
+      "PackagePath": "staticwebassets\\uploads\\df2aac3f-d450-4e04-9035-b4d8c4950101.jpg"
+    },
+    {
+      "Id": "C:\\Users\\HP\\source\\repos\\E_Commerce\\E_Commerce\\wwwroot\\uploads\\fcc92166-494d-4879-8b58-a46dbbf617de.jpg",
+      "PackagePath": "staticwebassets\\uploads\\fcc92166-494d-4879-8b58-a46dbbf617de.jpg"
+    },
+    {
+      "Id": "C:\\Users\\HP\\source\\repos\\E_Commerce\\E_Commerce\\wwwroot\\uploads\\fd16a953-76fc-4186-889f-2fa54a668e48.jpg",
+      "PackagePath": "staticwebassets\\uploads\\fd16a953-76fc-4186-889f-2fa54a668e48.jpg"
+    },
+    {
+      "Id": "C:\\Users\\HP\\source\\repos\\E_Commerce\\E_Commerce\\wwwroot\\uploads\\fd66ef73-b6d1-4e75-bb01-be305db6646d.jpg",
+      "PackagePath": "staticwebassets\\uploads\\fd66ef73-b6d1-4e75-bb01-be305db6646d.jpg"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.E_Commerce.Microsoft.AspNetCore.StaticWebAssets.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.build.E_Commerce.props",
+      "PackagePath": "build\\E_Commerce.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.buildMultiTargeting.E_Commerce.props",
+      "PackagePath": "buildMultiTargeting\\E_Commerce.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.buildTransitive.E_Commerce.props",
+      "PackagePath": "buildTransitive\\E_Commerce.props"
+    }
+  ],
+  "ElementsToRemove": []
+}
