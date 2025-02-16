@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\HP\\source\\repos\\E_Commerce\\E_Commerce\\E_Commerce.csproj": {}
+    "D:\\Projects\\MenuApi\\E_Commerce\\E_Commerce.csproj": {}
   },
   "projects": {
-    "C:\\Users\\HP\\source\\repos\\E_Commerce\\E_Commerce\\E_Commerce.csproj": {
+    "D:\\Projects\\MenuApi\\E_Commerce\\E_Commerce.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\HP\\source\\repos\\E_Commerce\\E_Commerce\\E_Commerce.csproj",
+        "projectUniqueName": "D:\\Projects\\MenuApi\\E_Commerce\\E_Commerce.csproj",
         "projectName": "E_Commerce",
-        "projectPath": "C:\\Users\\HP\\source\\repos\\E_Commerce\\E_Commerce\\E_Commerce.csproj",
+        "projectPath": "D:\\Projects\\MenuApi\\E_Commerce\\E_Commerce.csproj",
         "packagesPath": "C:\\Users\\HP\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\HP\\source\\repos\\E_Commerce\\E_Commerce\\obj\\",
+        "outputPath": "D:\\Projects\\MenuApi\\E_Commerce\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

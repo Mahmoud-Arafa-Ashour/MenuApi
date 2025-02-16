@@ -6,6 +6,7 @@
         string Name ,
         string Adress ,
         string ResturantName ,
+        string PhoneNumber,
         string token ,
         int expiresin,
         string RefreshToken,

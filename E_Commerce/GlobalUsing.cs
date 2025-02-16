@@ -12,4 +12,7 @@ global using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 global using E_Commerce.Abstractions;
 global using Microsoft.AspNetCore.Mvc;
 global using Microsoft.Extensions.Options;
+global using E_Commerce.Contracts.login;
+global using Microsoft.AspNetCore.Identity;
+global using System.ComponentModel.DataAnnotations;
 

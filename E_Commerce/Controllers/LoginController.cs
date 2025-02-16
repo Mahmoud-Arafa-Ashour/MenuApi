@@ -26,12 +26,20 @@ namespace E_Commerce.Controllers
                authResponse.ToProblem();
         }
         [HttpPost("revoke-refresh-token")]
-        public async Task<IActionResult> RevokeRefreshTokenAsync([FromBody]RefreshTokenRequest request, CancellationToken cancellationToken)
+        public async Task<IActionResult> RevokeRefreshTokenAsync([FromBody] RefreshTokenRequest request, CancellationToken cancellationToken)
         {
             var authResult = await _authServices.RevokeRefreshToken(request.Token, request.RefreshToken, cancellationToken);
             return authResult.IsSuccess ?
                 Ok() :
                 authResult.ToProblem();
+        }
+        [HttpPost("register")]
+        public async Task<IActionResult> registerAsync(RegisterRequest request, CancellationToken cancellationToken)
+        {
+            var result = await _authServices.RegisterAsync(request , cancellationToken);
+            return result.IsSuccess ?
+                Ok() :
+                result.ToProblem();
         }
     }
 }

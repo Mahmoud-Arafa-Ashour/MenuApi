@@ -56,6 +56,11 @@ namespace E_Commerce
                         ValidAudience = "Menu Users"
                     };
                 });
+            services.Configure<IdentityOptions>(Options =>
+            {
+                Options.Password.RequiredLength = 8;
+                Options.SignIn.RequireConfirmedEmail = false;
+            });
             return services;
         }
     }

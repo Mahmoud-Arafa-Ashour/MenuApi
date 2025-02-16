@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "MXBt5IYaq+2d4HB26BZ1m+oiE4mjkRaye0fI2Hz8Ox8=",
+  "Hash": "8TT+dsdwvMqQCP1eFZ7X56tHH1U4kwzGA5y9TkiweXo=",
   "Source": "E_Commerce",
   "BasePath": "_content/E_Commerce",
   "Mode": "Default",
@@ -10,17 +10,17 @@
     {
       "Name": "E_Commerce\\wwwroot",
       "Source": "E_Commerce",
-      "ContentRoot": "C:\\Users\\HP\\source\\repos\\E_Commerce\\E_Commerce\\wwwroot\\",
+      "ContentRoot": "D:\\Projects\\MenuApi\\E_Commerce\\wwwroot\\",
       "BasePath": "_content/E_Commerce",
       "Pattern": "**"
     }
   ],
   "Assets": [
     {
-      "Identity": "C:\\Users\\HP\\source\\repos\\E_Commerce\\E_Commerce\\wwwroot\\uploads\\16407336-e62a-4987-ab06-2722cdd5f384.jpg",
+      "Identity": "D:\\Projects\\MenuApi\\E_Commerce\\wwwroot\\uploads\\16407336-e62a-4987-ab06-2722cdd5f384.jpg",
       "SourceId": "E_Commerce",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\HP\\source\\repos\\E_Commerce\\E_Commerce\\wwwroot\\",
+      "ContentRoot": "D:\\Projects\\MenuApi\\E_Commerce\\wwwroot\\",
       "BasePath": "_content/E_Commerce",
       "RelativePath": "uploads/16407336-e62a-4987-ab06-2722cdd5f384.jpg",
       "AssetKind": "All",
@@ -36,10 +36,29 @@
       "OriginalItemSpec": "wwwroot\\uploads\\16407336-e62a-4987-ab06-2722cdd5f384.jpg"
     },
     {
-      "Identity": "C:\\Users\\HP\\source\\repos\\E_Commerce\\E_Commerce\\wwwroot\\uploads\\1a37da3c-2fd2-44eb-ab55-47f1201670f3.jpg",
+      "Identity": "D:\\Projects\\MenuApi\\E_Commerce\\wwwroot\\uploads\\18dac6be-2b07-4f68-aaaa-e4e1288b37fa.jpg",
       "SourceId": "E_Commerce",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\HP\\source\\repos\\E_Commerce\\E_Commerce\\wwwroot\\",
+      "ContentRoot": "D:\\Projects\\MenuApi\\E_Commerce\\wwwroot\\",
+      "BasePath": "_content/E_Commerce",
+      "RelativePath": "uploads/18dac6be-2b07-4f68-aaaa-e4e1288b37fa.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\uploads\\18dac6be-2b07-4f68-aaaa-e4e1288b37fa.jpg"
+    },
+    {
+      "Identity": "D:\\Projects\\MenuApi\\E_Commerce\\wwwroot\\uploads\\1a37da3c-2fd2-44eb-ab55-47f1201670f3.jpg",
+      "SourceId": "E_Commerce",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\Projects\\MenuApi\\E_Commerce\\wwwroot\\",
       "BasePath": "_content/E_Commerce",
       "RelativePath": "uploads/1a37da3c-2fd2-44eb-ab55-47f1201670f3.jpg",
       "AssetKind": "All",
@@ -55,10 +74,10 @@
       "OriginalItemSpec": "wwwroot\\uploads\\1a37da3c-2fd2-44eb-ab55-47f1201670f3.jpg"
     },
     {
-      "Identity": "C:\\Users\\HP\\source\\repos\\E_Commerce\\E_Commerce\\wwwroot\\uploads\\65f1364a-4585-41c9-8585-95c5ddcdc8ea.jpg",
+      "Identity": "D:\\Projects\\MenuApi\\E_Commerce\\wwwroot\\uploads\\65f1364a-4585-41c9-8585-95c5ddcdc8ea.jpg",
       "SourceId": "E_Commerce",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\HP\\source\\repos\\E_Commerce\\E_Commerce\\wwwroot\\",
+      "ContentRoot": "D:\\Projects\\MenuApi\\E_Commerce\\wwwroot\\",
       "BasePath": "_content/E_Commerce",
       "RelativePath": "uploads/65f1364a-4585-41c9-8585-95c5ddcdc8ea.jpg",
       "AssetKind": "All",
@@ -74,10 +93,10 @@
       "OriginalItemSpec": "wwwroot\\uploads\\65f1364a-4585-41c9-8585-95c5ddcdc8ea.jpg"
     },
     {
-      "Identity": "C:\\Users\\HP\\source\\repos\\E_Commerce\\E_Commerce\\wwwroot\\uploads\\77d9ad6c-adad-42a6-9e68-32e1820efea0.jpg",
+      "Identity": "D:\\Projects\\MenuApi\\E_Commerce\\wwwroot\\uploads\\77d9ad6c-adad-42a6-9e68-32e1820efea0.jpg",
       "SourceId": "E_Commerce",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\HP\\source\\repos\\E_Commerce\\E_Commerce\\wwwroot\\",
+      "ContentRoot": "D:\\Projects\\MenuApi\\E_Commerce\\wwwroot\\",
       "BasePath": "_content/E_Commerce",
       "RelativePath": "uploads/77d9ad6c-adad-42a6-9e68-32e1820efea0.jpg",
       "AssetKind": "All",
@@ -93,10 +112,10 @@
       "OriginalItemSpec": "wwwroot\\uploads\\77d9ad6c-adad-42a6-9e68-32e1820efea0.jpg"
     },
     {
-      "Identity": "C:\\Users\\HP\\source\\repos\\E_Commerce\\E_Commerce\\wwwroot\\uploads\\7b238140-87c2-4664-931a-ae29d1db37b1.jpg",
+      "Identity": "D:\\Projects\\MenuApi\\E_Commerce\\wwwroot\\uploads\\7b238140-87c2-4664-931a-ae29d1db37b1.jpg",
       "SourceId": "E_Commerce",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\HP\\source\\repos\\E_Commerce\\E_Commerce\\wwwroot\\",
+      "ContentRoot": "D:\\Projects\\MenuApi\\E_Commerce\\wwwroot\\",
       "BasePath": "_content/E_Commerce",
       "RelativePath": "uploads/7b238140-87c2-4664-931a-ae29d1db37b1.jpg",
       "AssetKind": "All",
@@ -112,10 +131,29 @@
       "OriginalItemSpec": "wwwroot\\uploads\\7b238140-87c2-4664-931a-ae29d1db37b1.jpg"
     },
     {
-      "Identity": "C:\\Users\\HP\\source\\repos\\E_Commerce\\E_Commerce\\wwwroot\\uploads\\8aecf777-3fa6-49d6-b5be-198db9f08c79.jpg",
+      "Identity": "D:\\Projects\\MenuApi\\E_Commerce\\wwwroot\\uploads\\83a22565-d876-4156-bec1-86abde0eb226.jpg",
       "SourceId": "E_Commerce",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\HP\\source\\repos\\E_Commerce\\E_Commerce\\wwwroot\\",
+      "ContentRoot": "D:\\Projects\\MenuApi\\E_Commerce\\wwwroot\\",
+      "BasePath": "_content/E_Commerce",
+      "RelativePath": "uploads/83a22565-d876-4156-bec1-86abde0eb226.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\uploads\\83a22565-d876-4156-bec1-86abde0eb226.jpg"
+    },
+    {
+      "Identity": "D:\\Projects\\MenuApi\\E_Commerce\\wwwroot\\uploads\\8aecf777-3fa6-49d6-b5be-198db9f08c79.jpg",
+      "SourceId": "E_Commerce",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\Projects\\MenuApi\\E_Commerce\\wwwroot\\",
       "BasePath": "_content/E_Commerce",
       "RelativePath": "uploads/8aecf777-3fa6-49d6-b5be-198db9f08c79.jpg",
       "AssetKind": "All",
@@ -131,10 +169,10 @@
       "OriginalItemSpec": "wwwroot\\uploads\\8aecf777-3fa6-49d6-b5be-198db9f08c79.jpg"
     },
     {
-      "Identity": "C:\\Users\\HP\\source\\repos\\E_Commerce\\E_Commerce\\wwwroot\\uploads\\db29b692-e27f-4690-a631-18b3993b8496.jpg",
+      "Identity": "D:\\Projects\\MenuApi\\E_Commerce\\wwwroot\\uploads\\db29b692-e27f-4690-a631-18b3993b8496.jpg",
       "SourceId": "E_Commerce",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\HP\\source\\repos\\E_Commerce\\E_Commerce\\wwwroot\\",
+      "ContentRoot": "D:\\Projects\\MenuApi\\E_Commerce\\wwwroot\\",
       "BasePath": "_content/E_Commerce",
       "RelativePath": "uploads/db29b692-e27f-4690-a631-18b3993b8496.jpg",
       "AssetKind": "All",
@@ -150,10 +188,10 @@
       "OriginalItemSpec": "wwwroot\\uploads\\db29b692-e27f-4690-a631-18b3993b8496.jpg"
     },
     {
-      "Identity": "C:\\Users\\HP\\source\\repos\\E_Commerce\\E_Commerce\\wwwroot\\uploads\\dc88bf24-e0d7-47c4-ab81-be70663d0d6e.jpg",
+      "Identity": "D:\\Projects\\MenuApi\\E_Commerce\\wwwroot\\uploads\\dc88bf24-e0d7-47c4-ab81-be70663d0d6e.jpg",
       "SourceId": "E_Commerce",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\HP\\source\\repos\\E_Commerce\\E_Commerce\\wwwroot\\",
+      "ContentRoot": "D:\\Projects\\MenuApi\\E_Commerce\\wwwroot\\",
       "BasePath": "_content/E_Commerce",
       "RelativePath": "uploads/dc88bf24-e0d7-47c4-ab81-be70663d0d6e.jpg",
       "AssetKind": "All",
@@ -169,10 +207,10 @@
       "OriginalItemSpec": "wwwroot\\uploads\\dc88bf24-e0d7-47c4-ab81-be70663d0d6e.jpg"
     },
     {
-      "Identity": "C:\\Users\\HP\\source\\repos\\E_Commerce\\E_Commerce\\wwwroot\\uploads\\df2aac3f-d450-4e04-9035-b4d8c4950101.jpg",
+      "Identity": "D:\\Projects\\MenuApi\\E_Commerce\\wwwroot\\uploads\\df2aac3f-d450-4e04-9035-b4d8c4950101.jpg",
       "SourceId": "E_Commerce",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\HP\\source\\repos\\E_Commerce\\E_Commerce\\wwwroot\\",
+      "ContentRoot": "D:\\Projects\\MenuApi\\E_Commerce\\wwwroot\\",
       "BasePath": "_content/E_Commerce",
       "RelativePath": "uploads/df2aac3f-d450-4e04-9035-b4d8c4950101.jpg",
       "AssetKind": "All",
@@ -188,10 +226,10 @@
       "OriginalItemSpec": "wwwroot\\uploads\\df2aac3f-d450-4e04-9035-b4d8c4950101.jpg"
     },
     {
-      "Identity": "C:\\Users\\HP\\source\\repos\\E_Commerce\\E_Commerce\\wwwroot\\uploads\\fcc92166-494d-4879-8b58-a46dbbf617de.jpg",
+      "Identity": "D:\\Projects\\MenuApi\\E_Commerce\\wwwroot\\uploads\\fcc92166-494d-4879-8b58-a46dbbf617de.jpg",
       "SourceId": "E_Commerce",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\HP\\source\\repos\\E_Commerce\\E_Commerce\\wwwroot\\",
+      "ContentRoot": "D:\\Projects\\MenuApi\\E_Commerce\\wwwroot\\",
       "BasePath": "_content/E_Commerce",
       "RelativePath": "uploads/fcc92166-494d-4879-8b58-a46dbbf617de.jpg",
       "AssetKind": "All",
@@ -207,10 +245,10 @@
       "OriginalItemSpec": "wwwroot\\uploads\\fcc92166-494d-4879-8b58-a46dbbf617de.jpg"
     },
     {
-      "Identity": "C:\\Users\\HP\\source\\repos\\E_Commerce\\E_Commerce\\wwwroot\\uploads\\fd16a953-76fc-4186-889f-2fa54a668e48.jpg",
+      "Identity": "D:\\Projects\\MenuApi\\E_Commerce\\wwwroot\\uploads\\fd16a953-76fc-4186-889f-2fa54a668e48.jpg",
       "SourceId": "E_Commerce",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\HP\\source\\repos\\E_Commerce\\E_Commerce\\wwwroot\\",
+      "ContentRoot": "D:\\Projects\\MenuApi\\E_Commerce\\wwwroot\\",
       "BasePath": "_content/E_Commerce",
       "RelativePath": "uploads/fd16a953-76fc-4186-889f-2fa54a668e48.jpg",
       "AssetKind": "All",
@@ -226,10 +264,10 @@
       "OriginalItemSpec": "wwwroot\\uploads\\fd16a953-76fc-4186-889f-2fa54a668e48.jpg"
     },
     {
-      "Identity": "C:\\Users\\HP\\source\\repos\\E_Commerce\\E_Commerce\\wwwroot\\uploads\\fd66ef73-b6d1-4e75-bb01-be305db6646d.jpg",
+      "Identity": "D:\\Projects\\MenuApi\\E_Commerce\\wwwroot\\uploads\\fd66ef73-b6d1-4e75-bb01-be305db6646d.jpg",
       "SourceId": "E_Commerce",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\HP\\source\\repos\\E_Commerce\\E_Commerce\\wwwroot\\",
+      "ContentRoot": "D:\\Projects\\MenuApi\\E_Commerce\\wwwroot\\",
       "BasePath": "_content/E_Commerce",
       "RelativePath": "uploads/fd66ef73-b6d1-4e75-bb01-be305db6646d.jpg",
       "AssetKind": "All",
