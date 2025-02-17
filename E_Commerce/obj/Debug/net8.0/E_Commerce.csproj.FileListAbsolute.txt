@@ -359,3 +359,5 @@ D:\Projects\MenuApi\E_Commerce\obj\Debug\net8.0\refint\E_Commerce.dll
 D:\Projects\MenuApi\E_Commerce\obj\Debug\net8.0\E_Commerce.pdb
 D:\Projects\MenuApi\E_Commerce\obj\Debug\net8.0\E_Commerce.genruntimeconfig.cache
 D:\Projects\MenuApi\E_Commerce\obj\Debug\net8.0\ref\E_Commerce.dll
+D:\Projects\MenuApi\E_Commerce\bin\Debug\net8.0\FluentValidation.AspNetCore.dll
+D:\Projects\MenuApi\E_Commerce\bin\Debug\net8.0\FluentValidation.DependencyInjectionExtensions.dll

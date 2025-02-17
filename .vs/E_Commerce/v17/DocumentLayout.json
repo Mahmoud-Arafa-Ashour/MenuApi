@@ -3,48 +3,84 @@
   "WorkspaceRootPath": "D:\\Projects\\MenuApi\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{DEA0361C-E1F7-427D-A605-7E8A33E8723A}|E_Commerce\\E_Commerce.csproj|d:\\projects\\menuapi\\e_commerce\\contracts\\login\\registerrequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{DEA0361C-E1F7-427D-A605-7E8A33E8723A}|E_Commerce\\E_Commerce.csproj|solutionrelative:e_commerce\\contracts\\login\\registerrequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{DEA0361C-E1F7-427D-A605-7E8A33E8723A}|E_Commerce\\E_Commerce.csproj|d:\\projects\\menuapi\\e_commerce\\contracts\\user\\changepasswordrequset.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DEA0361C-E1F7-427D-A605-7E8A33E8723A}|E_Commerce\\E_Commerce.csproj|solutionrelative:e_commerce\\contracts\\user\\changepasswordrequset.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{DEA0361C-E1F7-427D-A605-7E8A33E8723A}|E_Commerce\\E_Commerce.csproj|d:\\projects\\menuapi\\e_commerce\\services\\authservices.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{DEA0361C-E1F7-427D-A605-7E8A33E8723A}|E_Commerce\\E_Commerce.csproj|solutionrelative:e_commerce\\services\\authservices.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{DEA0361C-E1F7-427D-A605-7E8A33E8723A}|E_Commerce\\E_Commerce.csproj|d:\\projects\\menuapi\\e_commerce\\mapping\\mappingconfiguration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{DEA0361C-E1F7-427D-A605-7E8A33E8723A}|E_Commerce\\E_Commerce.csproj|solutionrelative:e_commerce\\mapping\\mappingconfiguration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{DEA0361C-E1F7-427D-A605-7E8A33E8723A}|E_Commerce\\E_Commerce.csproj|d:\\projects\\menuapi\\e_commerce\\contracts\\login\\registerrequestvalidator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{DEA0361C-E1F7-427D-A605-7E8A33E8723A}|E_Commerce\\E_Commerce.csproj|solutionrelative:e_commerce\\contracts\\login\\registerrequestvalidator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{DEA0361C-E1F7-427D-A605-7E8A33E8723A}|E_Commerce\\E_Commerce.csproj|d:\\projects\\menuapi\\e_commerce\\services\\iauthservices.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{DEA0361C-E1F7-427D-A605-7E8A33E8723A}|E_Commerce\\E_Commerce.csproj|solutionrelative:e_commerce\\services\\iauthservices.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{DEA0361C-E1F7-427D-A605-7E8A33E8723A}|E_Commerce\\E_Commerce.csproj|d:\\projects\\menuapi\\e_commerce\\contracts\\auth\\authresponse.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{DEA0361C-E1F7-427D-A605-7E8A33E8723A}|E_Commerce\\E_Commerce.csproj|solutionrelative:e_commerce\\contracts\\auth\\authresponse.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{DEA0361C-E1F7-427D-A605-7E8A33E8723A}|E_Commerce\\E_Commerce.csproj|d:\\projects\\menuapi\\e_commerce\\persistant\\applicationuser.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{DEA0361C-E1F7-427D-A605-7E8A33E8723A}|E_Commerce\\E_Commerce.csproj|solutionrelative:e_commerce\\persistant\\applicationuser.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{DEA0361C-E1F7-427D-A605-7E8A33E8723A}|E_Commerce\\E_Commerce.csproj|d:\\projects\\menuapi\\e_commerce\\contracts\\user\\changepasswordrequsetvalidator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DEA0361C-E1F7-427D-A605-7E8A33E8723A}|E_Commerce\\E_Commerce.csproj|solutionrelative:e_commerce\\contracts\\user\\changepasswordrequsetvalidator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{DEA0361C-E1F7-427D-A605-7E8A33E8723A}|E_Commerce\\E_Commerce.csproj|d:\\projects\\menuapi\\e_commerce\\dependencyinjection.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{DEA0361C-E1F7-427D-A605-7E8A33E8723A}|E_Commerce\\E_Commerce.csproj|solutionrelative:e_commerce\\dependencyinjection.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
+      "AbsoluteMoniker": "D:0:0:{DEA0361C-E1F7-427D-A605-7E8A33E8723A}|E_Commerce\\E_Commerce.csproj|d:\\projects\\menuapi\\e_commerce\\contracts\\user\\userprofileresponse.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DEA0361C-E1F7-427D-A605-7E8A33E8723A}|E_Commerce\\E_Commerce.csproj|solutionrelative:e_commerce\\contracts\\user\\userprofileresponse.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DEA0361C-E1F7-427D-A605-7E8A33E8723A}|E_Commerce\\E_Commerce.csproj|d:\\projects\\menuapi\\e_commerce\\services\\iuserservices.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DEA0361C-E1F7-427D-A605-7E8A33E8723A}|E_Commerce\\E_Commerce.csproj|solutionrelative:e_commerce\\services\\iuserservices.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DEA0361C-E1F7-427D-A605-7E8A33E8723A}|E_Commerce\\E_Commerce.csproj|d:\\projects\\menuapi\\e_commerce\\contracts\\login\\registerrequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DEA0361C-E1F7-427D-A605-7E8A33E8723A}|E_Commerce\\E_Commerce.csproj|solutionrelative:e_commerce\\contracts\\login\\registerrequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DEA0361C-E1F7-427D-A605-7E8A33E8723A}|E_Commerce\\E_Commerce.csproj|d:\\projects\\menuapi\\e_commerce\\contracts\\user\\updateprofilerequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DEA0361C-E1F7-427D-A605-7E8A33E8723A}|E_Commerce\\E_Commerce.csproj|solutionrelative:e_commerce\\contracts\\user\\updateprofilerequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DEA0361C-E1F7-427D-A605-7E8A33E8723A}|E_Commerce\\E_Commerce.csproj|d:\\projects\\menuapi\\e_commerce\\contracts\\user\\updateprofilerequestvalidator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DEA0361C-E1F7-427D-A605-7E8A33E8723A}|E_Commerce\\E_Commerce.csproj|solutionrelative:e_commerce\\contracts\\user\\updateprofilerequestvalidator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DEA0361C-E1F7-427D-A605-7E8A33E8723A}|E_Commerce\\E_Commerce.csproj|d:\\projects\\menuapi\\e_commerce\\contracts\\login\\registerrequestvalidator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DEA0361C-E1F7-427D-A605-7E8A33E8723A}|E_Commerce\\E_Commerce.csproj|solutionrelative:e_commerce\\contracts\\login\\registerrequestvalidator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DEA0361C-E1F7-427D-A605-7E8A33E8723A}|E_Commerce\\E_Commerce.csproj|d:\\projects\\menuapi\\e_commerce\\controllers\\accountcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DEA0361C-E1F7-427D-A605-7E8A33E8723A}|E_Commerce\\E_Commerce.csproj|solutionrelative:e_commerce\\controllers\\accountcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DEA0361C-E1F7-427D-A605-7E8A33E8723A}|E_Commerce\\E_Commerce.csproj|d:\\projects\\menuapi\\e_commerce\\services\\userservices.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DEA0361C-E1F7-427D-A605-7E8A33E8723A}|E_Commerce\\E_Commerce.csproj|solutionrelative:e_commerce\\services\\userservices.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{DEA0361C-E1F7-427D-A605-7E8A33E8723A}|E_Commerce\\E_Commerce.csproj|d:\\projects\\menuapi\\e_commerce\\controllers\\logincontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{DEA0361C-E1F7-427D-A605-7E8A33E8723A}|E_Commerce\\E_Commerce.csproj|solutionrelative:e_commerce\\controllers\\logincontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DEA0361C-E1F7-427D-A605-7E8A33E8723A}|E_Commerce\\E_Commerce.csproj|d:\\projects\\menuapi\\e_commerce\\mapping\\mappingconfiguration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DEA0361C-E1F7-427D-A605-7E8A33E8723A}|E_Commerce\\E_Commerce.csproj|solutionrelative:e_commerce\\mapping\\mappingconfiguration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DEA0361C-E1F7-427D-A605-7E8A33E8723A}|E_Commerce\\E_Commerce.csproj|d:\\projects\\menuapi\\e_commerce\\abstractions\\userextentions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DEA0361C-E1F7-427D-A605-7E8A33E8723A}|E_Commerce\\E_Commerce.csproj|solutionrelative:e_commerce\\abstractions\\userextentions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DEA0361C-E1F7-427D-A605-7E8A33E8723A}|E_Commerce\\E_Commerce.csproj|d:\\projects\\menuapi\\e_commerce\\services\\authservices.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DEA0361C-E1F7-427D-A605-7E8A33E8723A}|E_Commerce\\E_Commerce.csproj|solutionrelative:e_commerce\\services\\authservices.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DEA0361C-E1F7-427D-A605-7E8A33E8723A}|E_Commerce\\E_Commerce.csproj|d:\\projects\\menuapi\\e_commerce\\services\\iauthservices.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DEA0361C-E1F7-427D-A605-7E8A33E8723A}|E_Commerce\\E_Commerce.csproj|solutionrelative:e_commerce\\services\\iauthservices.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DEA0361C-E1F7-427D-A605-7E8A33E8723A}|E_Commerce\\E_Commerce.csproj|d:\\projects\\menuapi\\e_commerce\\migrations\\20250216100458_fix some issues.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DEA0361C-E1F7-427D-A605-7E8A33E8723A}|E_Commerce\\E_Commerce.csproj|solutionrelative:e_commerce\\migrations\\20250216100458_fix some issues.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DEA0361C-E1F7-427D-A605-7E8A33E8723A}|E_Commerce\\E_Commerce.csproj|d:\\projects\\menuapi\\e_commerce\\persistant\\applicationuser.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DEA0361C-E1F7-427D-A605-7E8A33E8723A}|E_Commerce\\E_Commerce.csproj|solutionrelative:e_commerce\\persistant\\applicationuser.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{DEA0361C-E1F7-427D-A605-7E8A33E8723A}|E_Commerce\\E_Commerce.csproj|d:\\projects\\menuapi\\e_commerce\\globalusing.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{DEA0361C-E1F7-427D-A605-7E8A33E8723A}|E_Commerce\\E_Commerce.csproj|solutionrelative:e_commerce\\globalusing.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{DEA0361C-E1F7-427D-A605-7E8A33E8723A}|E_Commerce\\E_Commerce.csproj|d:\\projects\\menuapi\\e_commerce\\migrations\\20250216100458_fix some issues.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{DEA0361C-E1F7-427D-A605-7E8A33E8723A}|E_Commerce\\E_Commerce.csproj|solutionrelative:e_commerce\\migrations\\20250216100458_fix some issues.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{DEA0361C-E1F7-427D-A605-7E8A33E8723A}|E_Commerce\\E_Commerce.csproj|d:\\projects\\menuapi\\e_commerce\\contracts\\auth\\authresponse.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DEA0361C-E1F7-427D-A605-7E8A33E8723A}|E_Commerce\\E_Commerce.csproj|solutionrelative:e_commerce\\contracts\\auth\\authresponse.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -54,112 +90,76 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 8,
+          "SelectedChildIndex": 7,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "LoginController.cs",
-              "DocumentMoniker": "D:\\Projects\\MenuApi\\E_Commerce\\Controllers\\LoginController.cs",
-              "RelativeDocumentMoniker": "E_Commerce\\Controllers\\LoginController.cs",
-              "ToolTip": "D:\\Projects\\MenuApi\\E_Commerce\\Controllers\\LoginController.cs",
-              "RelativeToolTip": "E_Commerce\\Controllers\\LoginController.cs",
-              "ViewState": "AQIAABsAAAAAAAAAAAAuwCQAAABLAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-16T09:39:18.164Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "IAuthServices.cs",
-              "DocumentMoniker": "D:\\Projects\\MenuApi\\E_Commerce\\Services\\IAuthServices.cs",
-              "RelativeDocumentMoniker": "E_Commerce\\Services\\IAuthServices.cs",
-              "ToolTip": "D:\\Projects\\MenuApi\\E_Commerce\\Services\\IAuthServices.cs",
-              "RelativeToolTip": "E_Commerce\\Services\\IAuthServices.cs",
-              "ViewState": "AQIAAAMAAAAAAAAAAAAwwAoAAAAiAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-16T09:38:50.897Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "AuthServices.cs",
-              "DocumentMoniker": "D:\\Projects\\MenuApi\\E_Commerce\\Services\\AuthServices.cs",
-              "RelativeDocumentMoniker": "E_Commerce\\Services\\AuthServices.cs",
-              "ToolTip": "D:\\Projects\\MenuApi\\E_Commerce\\Services\\AuthServices.cs",
-              "RelativeToolTip": "E_Commerce\\Services\\AuthServices.cs",
-              "ViewState": "AQIAACsAAAAAAAAAAAAQwFYAAAA/AAAA",
+              "Title": "ChangePasswordRequsetValidator.cs",
+              "DocumentMoniker": "D:\\Projects\\MenuApi\\E_Commerce\\Contracts\\User\\ChangePasswordRequsetValidator.cs",
+              "RelativeDocumentMoniker": "E_Commerce\\Contracts\\User\\ChangePasswordRequsetValidator.cs",
+              "ToolTip": "D:\\Projects\\MenuApi\\E_Commerce\\Contracts\\User\\ChangePasswordRequsetValidator.cs",
+              "RelativeToolTip": "E_Commerce\\Contracts\\User\\ChangePasswordRequsetValidator.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAIAAABLAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-16T09:27:42.736Z",
+              "WhenOpened": "2025-02-17T10:07:40.696Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
-              "Title": "GlobalUsing.cs",
-              "DocumentMoniker": "D:\\Projects\\MenuApi\\E_Commerce\\GlobalUsing.cs",
-              "RelativeDocumentMoniker": "E_Commerce\\GlobalUsing.cs",
-              "ToolTip": "D:\\Projects\\MenuApi\\E_Commerce\\GlobalUsing.cs",
-              "RelativeToolTip": "E_Commerce\\GlobalUsing.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA8AAAABAAAA",
+              "DocumentIndex": 6,
+              "Title": "UpdateProfileRequest.cs",
+              "DocumentMoniker": "D:\\Projects\\MenuApi\\E_Commerce\\Contracts\\User\\UpdateProfileRequest.cs",
+              "RelativeDocumentMoniker": "E_Commerce\\Contracts\\User\\UpdateProfileRequest.cs",
+              "ToolTip": "D:\\Projects\\MenuApi\\E_Commerce\\Contracts\\User\\UpdateProfileRequest.cs",
+              "RelativeToolTip": "E_Commerce\\Contracts\\User\\UpdateProfileRequest.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAuwAIAAABrAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-16T09:25:08.657Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "MappingConfiguration.cs",
-              "DocumentMoniker": "D:\\Projects\\MenuApi\\E_Commerce\\Mapping\\MappingConfiguration.cs",
-              "RelativeDocumentMoniker": "E_Commerce\\Mapping\\MappingConfiguration.cs",
-              "ToolTip": "D:\\Projects\\MenuApi\\E_Commerce\\Mapping\\MappingConfiguration.cs",
-              "RelativeToolTip": "E_Commerce\\Mapping\\MappingConfiguration.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAcAAABLAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-16T09:24:09.444Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "AuthResponse.cs",
-              "DocumentMoniker": "D:\\Projects\\MenuApi\\E_Commerce\\Contracts\\Auth\\AuthResponse.cs",
-              "RelativeDocumentMoniker": "E_Commerce\\Contracts\\Auth\\AuthResponse.cs",
-              "ToolTip": "D:\\Projects\\MenuApi\\E_Commerce\\Contracts\\Auth\\AuthResponse.cs",
-              "RelativeToolTip": "E_Commerce\\Contracts\\Auth\\AuthResponse.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAgAAAAbAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-16T10:12:09.58Z",
+              "WhenOpened": "2025-02-17T09:46:56.607Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 10,
-              "Title": "20250216100458_fix some issues.cs",
-              "DocumentMoniker": "D:\\Projects\\MenuApi\\E_Commerce\\Migrations\\20250216100458_fix some issues.cs",
-              "RelativeDocumentMoniker": "E_Commerce\\Migrations\\20250216100458_fix some issues.cs",
-              "ToolTip": "D:\\Projects\\MenuApi\\E_Commerce\\Migrations\\20250216100458_fix some issues.cs",
-              "RelativeToolTip": "E_Commerce\\Migrations\\20250216100458_fix some issues.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Title": "UserServices.cs",
+              "DocumentMoniker": "D:\\Projects\\MenuApi\\E_Commerce\\Services\\UserServices.cs",
+              "RelativeDocumentMoniker": "E_Commerce\\Services\\UserServices.cs",
+              "ToolTip": "D:\\Projects\\MenuApi\\E_Commerce\\Services\\UserServices.cs",
+              "RelativeToolTip": "E_Commerce\\Services\\UserServices.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAIAAABQAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-16T10:04:58.794Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "RegisterRequestValidator.cs",
-              "DocumentMoniker": "D:\\Projects\\MenuApi\\E_Commerce\\Contracts\\login\\RegisterRequestValidator.cs",
-              "RelativeDocumentMoniker": "E_Commerce\\Contracts\\login\\RegisterRequestValidator.cs",
-              "ToolTip": "D:\\Projects\\MenuApi\\E_Commerce\\Contracts\\login\\RegisterRequestValidator.cs",
-              "RelativeToolTip": "E_Commerce\\Contracts\\login\\RegisterRequestValidator.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABoAAAAFAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-16T09:13:44.622Z",
+              "WhenOpened": "2025-02-16T21:51:00.547Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 3,
+              "Title": "UserProfileResponse.cs",
+              "DocumentMoniker": "D:\\Projects\\MenuApi\\E_Commerce\\Contracts\\User\\UserProfileResponse.cs",
+              "RelativeDocumentMoniker": "E_Commerce\\Contracts\\User\\UserProfileResponse.cs",
+              "ToolTip": "D:\\Projects\\MenuApi\\E_Commerce\\Contracts\\User\\UserProfileResponse.cs",
+              "RelativeToolTip": "E_Commerce\\Contracts\\User\\UserProfileResponse.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAQAAAAPAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-16T21:53:03.117Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "IUserServices.cs",
+              "DocumentMoniker": "D:\\Projects\\MenuApi\\E_Commerce\\Services\\IUserServices.cs",
+              "RelativeDocumentMoniker": "E_Commerce\\Services\\IUserServices.cs",
+              "ToolTip": "D:\\Projects\\MenuApi\\E_Commerce\\Services\\IUserServices.cs",
+              "RelativeToolTip": "E_Commerce\\Services\\IUserServices.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAuwAYAAABSAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-16T21:51:27.399Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
               "Title": "RegisterRequest.cs",
               "DocumentMoniker": "D:\\Projects\\MenuApi\\E_Commerce\\Contracts\\login\\RegisterRequest.cs",
               "RelativeDocumentMoniker": "E_Commerce\\Contracts\\login\\RegisterRequest.cs",
@@ -172,27 +172,185 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 2,
               "Title": "DependencyInjection.cs",
               "DocumentMoniker": "D:\\Projects\\MenuApi\\E_Commerce\\DependencyInjection.cs",
               "RelativeDocumentMoniker": "E_Commerce\\DependencyInjection.cs",
               "ToolTip": "D:\\Projects\\MenuApi\\E_Commerce\\DependencyInjection.cs",
               "RelativeToolTip": "E_Commerce\\DependencyInjection.cs",
-              "ViewState": "AQIAACcAAAAAAAAAAADwvzwAAAA0AAAA",
+              "ViewState": "AQIAAB4AAAAAAAAAAAA3wBAAAAApAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-16T09:42:47.499Z"
+              "WhenOpened": "2025-02-16T09:42:47.499Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 0,
+              "Title": "ChangePasswordRequset.cs",
+              "DocumentMoniker": "D:\\Projects\\MenuApi\\E_Commerce\\Contracts\\User\\ChangePasswordRequset.cs",
+              "RelativeDocumentMoniker": "E_Commerce\\Contracts\\User\\ChangePasswordRequset.cs",
+              "ToolTip": "D:\\Projects\\MenuApi\\E_Commerce\\Contracts\\User\\ChangePasswordRequset.cs",
+              "RelativeToolTip": "E_Commerce\\Contracts\\User\\ChangePasswordRequset.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAUAAAABAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-17T09:54:43.665Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "UpdateProfileRequestValidator.cs",
+              "DocumentMoniker": "D:\\Projects\\MenuApi\\E_Commerce\\Contracts\\User\\UpdateProfileRequestValidator.cs",
+              "RelativeDocumentMoniker": "E_Commerce\\Contracts\\User\\UpdateProfileRequestValidator.cs",
+              "ToolTip": "D:\\Projects\\MenuApi\\E_Commerce\\Contracts\\User\\UpdateProfileRequestValidator.cs",
+              "RelativeToolTip": "E_Commerce\\Contracts\\User\\UpdateProfileRequestValidator.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABAAAAAsAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-17T10:12:33.371Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "RegisterRequestValidator.cs",
+              "DocumentMoniker": "D:\\Projects\\MenuApi\\E_Commerce\\Contracts\\login\\RegisterRequestValidator.cs",
+              "RelativeDocumentMoniker": "E_Commerce\\Contracts\\login\\RegisterRequestValidator.cs",
+              "ToolTip": "D:\\Projects\\MenuApi\\E_Commerce\\Contracts\\login\\RegisterRequestValidator.cs",
+              "RelativeToolTip": "E_Commerce\\Contracts\\login\\RegisterRequestValidator.cs",
+              "ViewState": "AQIAAAIAAAAAAAAAAAAxwBIAAACCAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-16T09:13:44.622Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "MappingConfiguration.cs",
+              "DocumentMoniker": "D:\\Projects\\MenuApi\\E_Commerce\\Mapping\\MappingConfiguration.cs",
+              "RelativeDocumentMoniker": "E_Commerce\\Mapping\\MappingConfiguration.cs",
+              "ToolTip": "D:\\Projects\\MenuApi\\E_Commerce\\Mapping\\MappingConfiguration.cs",
+              "RelativeToolTip": "E_Commerce\\Mapping\\MappingConfiguration.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAuwA4AAAA9AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-16T09:24:09.444Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "AccountController.cs",
+              "DocumentMoniker": "D:\\Projects\\MenuApi\\E_Commerce\\Controllers\\AccountController.cs",
+              "RelativeDocumentMoniker": "E_Commerce\\Controllers\\AccountController.cs",
+              "ToolTip": "D:\\Projects\\MenuApi\\E_Commerce\\Controllers\\AccountController.cs",
+              "RelativeToolTip": "E_Commerce\\Controllers\\AccountController.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABkAAAAJAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-16T22:04:26.954Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "UserExtentions.cs",
+              "DocumentMoniker": "D:\\Projects\\MenuApi\\E_Commerce\\Abstractions\\UserExtentions.cs",
+              "RelativeDocumentMoniker": "E_Commerce\\Abstractions\\UserExtentions.cs",
+              "ToolTip": "D:\\Projects\\MenuApi\\E_Commerce\\Abstractions\\UserExtentions.cs",
+              "RelativeToolTip": "E_Commerce\\Abstractions\\UserExtentions.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAcAAAA7AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-16T21:25:53.235Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "LoginController.cs",
+              "DocumentMoniker": "D:\\Projects\\MenuApi\\E_Commerce\\Controllers\\LoginController.cs",
+              "RelativeDocumentMoniker": "E_Commerce\\Controllers\\LoginController.cs",
+              "ToolTip": "D:\\Projects\\MenuApi\\E_Commerce\\Controllers\\LoginController.cs",
+              "RelativeToolTip": "E_Commerce\\Controllers\\LoginController.cs",
+              "ViewState": "AQIAABsAAAAAAAAAAAAuwCQAAABLAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-16T09:39:18.164Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "20250216100458_fix some issues.cs",
+              "DocumentMoniker": "D:\\Projects\\MenuApi\\E_Commerce\\Migrations\\20250216100458_fix some issues.cs",
+              "RelativeDocumentMoniker": "E_Commerce\\Migrations\\20250216100458_fix some issues.cs",
+              "ToolTip": "D:\\Projects\\MenuApi\\E_Commerce\\Migrations\\20250216100458_fix some issues.cs",
+              "RelativeToolTip": "E_Commerce\\Migrations\\20250216100458_fix some issues.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-16T10:04:58.794Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
               "Title": "ApplicationUser.cs",
               "DocumentMoniker": "D:\\Projects\\MenuApi\\E_Commerce\\Persistant\\ApplicationUser.cs",
               "RelativeDocumentMoniker": "E_Commerce\\Persistant\\ApplicationUser.cs",
               "ToolTip": "D:\\Projects\\MenuApi\\E_Commerce\\Persistant\\ApplicationUser.cs",
               "RelativeToolTip": "E_Commerce\\Persistant\\ApplicationUser.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA0AAAAFAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA4AAAALAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-16T09:58:55.142Z"
+              "WhenOpened": "2025-02-16T09:58:55.142Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "GlobalUsing.cs",
+              "DocumentMoniker": "D:\\Projects\\MenuApi\\E_Commerce\\GlobalUsing.cs",
+              "RelativeDocumentMoniker": "E_Commerce\\GlobalUsing.cs",
+              "ToolTip": "D:\\Projects\\MenuApi\\E_Commerce\\GlobalUsing.cs",
+              "RelativeToolTip": "E_Commerce\\GlobalUsing.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABcAAAAgAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-16T09:25:08.657Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "AuthServices.cs",
+              "DocumentMoniker": "D:\\Projects\\MenuApi\\E_Commerce\\Services\\AuthServices.cs",
+              "RelativeDocumentMoniker": "E_Commerce\\Services\\AuthServices.cs",
+              "ToolTip": "D:\\Projects\\MenuApi\\E_Commerce\\Services\\AuthServices.cs",
+              "RelativeToolTip": "E_Commerce\\Services\\AuthServices.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAIBJwFYAAAA/AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-16T09:27:42.736Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "IAuthServices.cs",
+              "DocumentMoniker": "D:\\Projects\\MenuApi\\E_Commerce\\Services\\IAuthServices.cs",
+              "RelativeDocumentMoniker": "E_Commerce\\Services\\IAuthServices.cs",
+              "ToolTip": "D:\\Projects\\MenuApi\\E_Commerce\\Services\\IAuthServices.cs",
+              "RelativeToolTip": "E_Commerce\\Services\\IAuthServices.cs",
+              "ViewState": "AQIAAAMAAAAAAAAAAAAwwAoAAAAiAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-16T09:38:50.897Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
+              "Title": "AuthResponse.cs",
+              "DocumentMoniker": "D:\\Projects\\MenuApi\\E_Commerce\\Contracts\\Auth\\AuthResponse.cs",
+              "RelativeDocumentMoniker": "E_Commerce\\Contracts\\Auth\\AuthResponse.cs",
+              "ToolTip": "D:\\Projects\\MenuApi\\E_Commerce\\Contracts\\Auth\\AuthResponse.cs",
+              "RelativeToolTip": "E_Commerce\\Contracts\\Auth\\AuthResponse.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAgAAAAbAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-16T10:12:09.58Z",
+              "EditorCaption": ""
             }
           ]
         }

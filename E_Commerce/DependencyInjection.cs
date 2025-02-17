@@ -1,11 +1,7 @@
-﻿
-using E_Commerce.Authentications;
-using Microsoft.AspNetCore.Authentication.JwtBearer;
-using Microsoft.AspNetCore.Identity;
-using Microsoft.IdentityModel.Tokens;
-using System.Reflection;
-using System.Text;
-
+﻿using FluentValidation;
+using FluentValidation.AspNetCore;
+using Microsoft.Extensions.DependencyInjection;
+using System;
 namespace E_Commerce
 {
     public static class DependencyInjection
@@ -18,17 +14,24 @@ namespace E_Commerce
             services.AddDbContext<ApplicationDbContext>(options => options.UseSqlServer(conn));
             services.AddMappsterServices();
             services.AddAuthconfigServices(configuration);
+            services.AddConfigServices();
             services.AddScoped<ICategoryServices, CategoryServices>();
             services.AddScoped<IAuthServices, AuthServices>();
+            services.AddScoped<IUserServices, UserServices>();
             services.AddSingleton<IJwtProvidor, JwtProvidor>();
             return services;
         }
-
         public static IServiceCollection AddMappsterServices(this IServiceCollection services)
         {
             var mappingConfiguration = TypeAdapterConfig.GlobalSettings;
             mappingConfiguration.Scan(Assembly.GetExecutingAssembly());
             services.AddSingleton<IMapper>(new Mapper(mappingConfiguration));
+            return services;
+        }
+        public static IServiceCollection AddConfigServices(this IServiceCollection services)
+        {
+            services.AddValidatorsFromAssembly(typeof(Program).Assembly);
+            services.AddFluentValidationAutoValidation();
             return services;
         }
         public static IServiceCollection AddAuthconfigServices(this IServiceCollection services , IConfiguration configuration)

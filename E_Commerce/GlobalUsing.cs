@@ -15,4 +15,10 @@ global using Microsoft.Extensions.Options;
 global using E_Commerce.Contracts.login;
 global using Microsoft.AspNetCore.Identity;
 global using System.ComponentModel.DataAnnotations;
-
+global using E_Commerce.Contracts.User;
+global using E_Commerce.Authentications;
+global using Microsoft.AspNetCore.Authentication.JwtBearer;
+global using Microsoft.IdentityModel.Tokens;
+global using System.Reflection;
+global using System.Text;
+global using Microsoft.AspNetCore.Authorization;
