@@ -1,6 +1,4 @@
-﻿using Microsoft.EntityFrameworkCore.Metadata.Builders;
-
-namespace E_Commerce.Persistant.EntityConfigurations
+﻿namespace E_Commerce.Persistant.EntityConfigurations
 {
     public class UserConfiguration : IEntityTypeConfiguration<ApplicationUser>
     {
@@ -9,7 +7,7 @@ namespace E_Commerce.Persistant.EntityConfigurations
             builder.Property(x => x.Name)
                 .IsRequired()
                 .HasMaxLength(100);
-            builder.Property(x=>x.Adress)
+            builder.Property(x => x.Adress)
                 .IsRequired().HasMaxLength(100);
             builder.Property(x => x.ResturnatName)
                 .IsRequired().HasMaxLength(100);
@@ -19,4 +17,5 @@ namespace E_Commerce.Persistant.EntityConfigurations
                 .HasForeignKey("UserId");
         }
     }
+
 }

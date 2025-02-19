@@ -22,3 +22,8 @@ global using Microsoft.IdentityModel.Tokens;
 global using System.Reflection;
 global using System.Text;
 global using Microsoft.AspNetCore.Authorization;
+global using System.Security.Claims;
+global using Microsoft.EntityFrameworkCore.Metadata.Builders;
+global using Microsoft.EntityFrameworkCore.Migrations;
+global using E_Commerce.Contracts.Item;
+

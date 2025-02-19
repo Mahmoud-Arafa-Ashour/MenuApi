@@ -1,23 +1,13 @@
-﻿
-using System.Reflection;
-using System.Security.Claims;
-
-namespace E_Commerce.Persistant
+﻿namespace E_Commerce.Persistant
 {
     public class ApplicationDbContext(DbContextOptions<ApplicationDbContext> options , IHttpContextAccessor httpContextAccessor) : 
         IdentityDbContext<ApplicationUser>(options)
     {
         private readonly IHttpContextAccessor _httpContextAccessor = httpContextAccessor;
         public DbSet<Category> Categories { get; set; }
+        public DbSet<Item> Items { get; set; }
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
-            modelBuilder.Entity<Category>(entity =>
-            {
-                entity.HasKey(x => x.Id);
-                entity.Property(x => x.Id)
-                .ValueGeneratedOnAdd();
-                entity.HasIndex(x => x.Name).IsUnique();
-            });
             modelBuilder.ApplyConfigurationsFromAssembly(Assembly.GetExecutingAssembly());
             base.OnModelCreating(modelBuilder);
         }

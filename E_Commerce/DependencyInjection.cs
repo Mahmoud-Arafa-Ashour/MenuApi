@@ -18,6 +18,7 @@ namespace E_Commerce
             services.AddScoped<ICategoryServices, CategoryServices>();
             services.AddScoped<IAuthServices, AuthServices>();
             services.AddScoped<IUserServices, UserServices>();
+            services.AddScoped<IItemServices, ItemServices>();
             services.AddSingleton<IJwtProvidor, JwtProvidor>();
             return services;
         }

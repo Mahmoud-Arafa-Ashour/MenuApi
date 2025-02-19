@@ -20,5 +20,10 @@
             public static readonly Error EmptyToken =
                 new Error("NotFound", "Null Refrence", StatusCodes.Status404NotFound);
         }
+        public class ItemErrors
+        {
+            public static readonly Error Emptyitem =
+                new Error("Item.NotFound", "No Item with this id", StatusCodes.Status404NotFound);
+        }
     }
 }
