@@ -25,5 +25,10 @@
             public static readonly Error Emptyitem =
                 new Error("Item.NotFound", "No Item with this id", StatusCodes.Status404NotFound);
         }
+        public class CategoryErrors
+        {
+            public static readonly Error EmptyCategory =
+                new Error("Category.NotFound", "No Category with this id", StatusCodes.Status404NotFound);
+        }
     }
 }

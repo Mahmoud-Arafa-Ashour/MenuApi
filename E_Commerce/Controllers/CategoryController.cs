@@ -34,6 +34,12 @@
 
             return Ok(result.Value);
         }
+        [HttpPut("Update-category/{id:int}")]
+        public async Task<IActionResult> UpdateCategory(int id,[FromForm] CategoryRequest request , CancellationToken cancellationToken)
+        {
+            var result = await _categoryServices.UpdateCategoryAsync(id,request , cancellationToken);
+            return result.IsFailure ? result.ToProblem() : NoContent();
+        }
         [HttpDelete("{id:int}")]
         public async Task<IActionResult> DeleteCategory(int id, CancellationToken cancellationToken)
         {

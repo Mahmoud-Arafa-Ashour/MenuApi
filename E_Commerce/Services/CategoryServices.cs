@@ -18,37 +18,43 @@
         }
         public async Task<Result<CategoryResponse>> CreateCategoryAsync(CategoryRequest request)
         {
-            if (request == null || request.image == null || string.IsNullOrWhiteSpace(request.Name))
+            if (request == null || string.IsNullOrWhiteSpace(request.Name))
             {
                 return Result.Failure<CategoryResponse>(new Error("InvalidData", "Invalid category data", StatusCodes.Status409Conflict));
             }
-            var isExistedCategory = _dbContext.Categories.Any(c => c.Name == request.Name);
+            var isExistedCategory = await _dbContext.Categories.AnyAsync(c => c.Name == request.Name);
             if (isExistedCategory)
             {
                 return Result.Failure<CategoryResponse>(new Error("Categories.InvalidData", "This Category is already Existed", StatusCodes.Status409Conflict));
             }
             try
             {
-                string uploadsFolder = Path.Combine(_environment.WebRootPath, "uploads");
-                if (!Directory.Exists(uploadsFolder))
+                string? imageUrl = null;  // Initialize as null
+
+                if (request.image is not null)  // Only process if an image is provided
                 {
-                    Directory.CreateDirectory(uploadsFolder);
+                    string uploadsFolder = _environment.WebRootPath ?? Path.Combine(Directory.GetCurrentDirectory(), "wwwroot", "uploads");
+
+                    if (!Directory.Exists(uploadsFolder))
+                    {
+                        Directory.CreateDirectory(uploadsFolder);
+                    }
+
+                    string uniqueFileName = $"{Guid.NewGuid()}{Path.GetExtension(request.image.FileName)}";
+                    string filePath = Path.Combine(uploadsFolder, uniqueFileName);
+
+                    using (var fileStream = File.Create(filePath))
+                    {
+                        await request.image.CopyToAsync(fileStream);
+                    }
+
+                    imageUrl = $"/uploads/{uniqueFileName}";  // Assign uploaded image URL
                 }
-
-                string uniqueFileName = Guid.NewGuid().ToString() + Path.GetExtension(request.image.FileName);
-                string filePath = Path.Combine(uploadsFolder, uniqueFileName);
-
-                using (var fileStream = File.Create(filePath))
-                {
-                    await request.image.CopyToAsync(fileStream);
-                }
-
-                string imageUrl = $"/uploads/{uniqueFileName}";
 
                 var category = new Category
                 {
                     Name = request.Name,
-                    ImagePath = imageUrl // Store the string path instead of the image bytes
+                    ImagePath = imageUrl // Can be null if no image was uploaded
                 };
 
                 _dbContext.Categories.Add(category);
@@ -72,6 +78,42 @@
             _dbContext.Categories.Remove(category!);
             await _dbContext.SaveChangesAsync(cancellationToken);
             return Result.Success();
+        }
+        public async Task<Result<CategoryResponse>> UpdateCategoryAsync(int id, CategoryRequest request, CancellationToken cancellationToken)
+        {
+            var category = await _dbContext.Categories.FindAsync(id);
+            if (category is null)
+                return Result.Failure<CategoryResponse>(new Error("Category.NotFound", "This category does not exist", StatusCodes.Status404NotFound));
+
+            try
+            {
+                string imageUrl = category!.ImagePath!;
+
+                if (request.image is not null)
+                {
+                    string uploadsFolder = Path.Combine(_environment.WebRootPath, "uploads");
+                    string uniqueFileName = $"{Guid.NewGuid()}{Path.GetExtension(request.image.FileName)}";
+                    string filePath = Path.Combine(uploadsFolder, uniqueFileName);
+
+                    using (var fileStream = File.Create(filePath))
+                    {
+                        await request.image.CopyToAsync(fileStream);
+                    }
+
+                    imageUrl = $"/uploads/{uniqueFileName}";
+                }
+                category.Name = request.Name;
+                category.ImagePath = imageUrl;
+
+                await _dbContext.SaveChangesAsync(cancellationToken);
+
+                var response = new CategoryResponse(category.Name, imageUrl);
+                return Result.Success(response);
+            }
+            catch (Exception ex)
+            {
+                return Result.Failure<CategoryResponse>(new Error("Update.Invalid", ex.Message, StatusCodes.Status409Conflict));
+            }
         }
     }
 }

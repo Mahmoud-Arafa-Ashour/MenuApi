@@ -1,6 +1,6 @@
-﻿using Microsoft.AspNetCore.Http;
+﻿using E_Commerce.Abstractions;
+using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
-
 namespace E_Commerce.Controllers
 {
     [Route("api/[controller]")]
@@ -8,17 +8,23 @@ namespace E_Commerce.Controllers
     public class ItemController(IItemServices itemServices) : ControllerBase
     {
         private readonly IItemServices _itemServices = itemServices;
-        [HttpGet]
-        public async Task<IActionResult> GetAllItems()
+        [HttpGet("{CatId:int}")]
+        public async Task<IActionResult> GetAllItems(int CatId)
         {
-            var result = await _itemServices.GetAllItemsAsync();
-            return Ok(result);
+            var result = await _itemServices.GetAllItemsAsync(CatId);
+            return result.IsSuccess ? Ok(result.Value) : result.ToProblem();
         }
-        [HttpGet("{id:int}")]
-        public async Task<IActionResult> GetById(int id , CancellationToken cancellationToken)
+        [HttpPost("Add-New-Item/{Catid:int}")]
+        public async Task<IActionResult> AddItem(int Catid, [FromForm] ItemRequest request)
         {
-            var ItemResponse = await _itemServices.GetItemById(id, cancellationToken);
-            return ItemResponse.IsSuccess ? Ok(ItemResponse) : ItemResponse.ToProblem();
+            var response = await _itemServices.AddItem(Catid, request);
+            return response.IsSuccess ? Created() : response.ToProblem();
+        }
+        [HttpDelete("Delete-Item/{Catid:int}")]
+        public async Task<IActionResult> DeleteItem(int Catid, int id , CancellationToken cancellationToken)
+        {
+            var response = await _itemServices.DeleteItem(Catid, id , cancellationToken);
+            return response.IsSuccess ? NoContent() : response.ToProblem();
         }
     }
 }

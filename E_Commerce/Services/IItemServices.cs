@@ -1,10 +1,10 @@
 ﻿using E_Commerce.Contracts.Item;
-
 namespace E_Commerce.Services
 {
     public interface IItemServices
     {
-        Task<IEnumerable<ItemResponse>> GetAllItemsAsync();
-        Task<Result<ItemResponse>> GetItemById(int id , CancellationToken cancellationToken = default);
+        Task<Result<IEnumerable<ItemResponse>>> GetAllItemsAsync(int CatId);
+        Task<Result> AddItem(int CatId, ItemRequest request);
+        Task<Result> DeleteItem(int CatId, int id, CancellationToken cancellationToken);
     }
 }
