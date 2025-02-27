@@ -1,6 +1,18 @@
 {
   "Files": [
     {
+      "Id": "D:\\Projects\\MenuApi\\E_Commerce\\wwwroot\\2e6d73ec-bb84-4630-b2d9-46f6a0d0d166.PNG",
+      "PackagePath": "staticwebassets\\2e6d73ec-bb84-4630-b2d9-46f6a0d0d166.PNG"
+    },
+    {
+      "Id": "D:\\Projects\\MenuApi\\E_Commerce\\wwwroot\\52c97b7b-0078-49cf-b9eb-55b174a5a1f9.webp",
+      "PackagePath": "staticwebassets\\52c97b7b-0078-49cf-b9eb-55b174a5a1f9.webp"
+    },
+    {
+      "Id": "D:\\Projects\\MenuApi\\E_Commerce\\wwwroot\\70aa568f-9291-4604-946b-95bc0ce2bae6.PNG",
+      "PackagePath": "staticwebassets\\70aa568f-9291-4604-946b-95bc0ce2bae6.PNG"
+    },
+    {
       "Id": "D:\\Projects\\MenuApi\\E_Commerce\\wwwroot\\8fac99ad-459b-4dc0-9ee6-a7a64b920797.PNG",
       "PackagePath": "staticwebassets\\8fac99ad-459b-4dc0-9ee6-a7a64b920797.PNG"
     },
@@ -9,8 +21,8 @@
       "PackagePath": "staticwebassets"
     },
     {
-      "Id": "D:\\Projects\\MenuApi\\E_Commerce\\wwwroot\\a019345c-3cc0-4258-aeb0-ca2d53e76ef9.PNG",
-      "PackagePath": "staticwebassets\\a019345c-3cc0-4258-aeb0-ca2d53e76ef9.PNG"
+      "Id": "D:\\Projects\\MenuApi\\E_Commerce\\wwwroot\\a85cbb8e-acc8-413b-b264-61abf49249b6.PNG",
+      "PackagePath": "staticwebassets\\a85cbb8e-acc8-413b-b264-61abf49249b6.PNG"
     },
     {
       "Id": "D:\\Projects\\MenuApi\\E_Commerce\\wwwroot\\b6895c93-1698-493e-9af6-8b70434444a9.PNG",

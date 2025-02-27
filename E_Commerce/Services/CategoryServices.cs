@@ -1,4 +1,6 @@
-﻿namespace E_Commerce.Services
+﻿using static E_Commerce.Abstractions.Errors;
+
+namespace E_Commerce.Services
 {
     public class CategoryServices(ApplicationDbContext dbContext , IWebHostEnvironment environment) : ICategoryServices
     {
@@ -69,39 +71,82 @@
                 return Result.Failure<CategoryResponse>(new Error("DatabaseError", ex.Message, StatusCodes.Status409Conflict));
             }
         }
-        public async Task<Result> DeleteCategoryAsync(int id , CancellationToken cancellationToken)
+        public async Task<Result> DeleteCategoryAsync(int id, CancellationToken cancellationToken)
         {
-            var isExisted =  _dbContext.Categories.Any(x=>x.Id == id);
-            if(!isExisted) 
-                return Result.Failure(new Error("Category.Not Found" , "This category is not Exixted" , StatusCodes.Status404NotFound));
-            var category = await _dbContext.Categories.FirstOrDefaultAsync(x=>x.Id == id);
-            _dbContext.Categories.Remove(category!);
-            await _dbContext.SaveChangesAsync(cancellationToken);
-            return Result.Success();
+            var category = await _dbContext.Categories.FirstOrDefaultAsync(x => x.Id == id, cancellationToken);
+
+            if (category is null)
+                return Result.Failure(CategoryErrors.EmptyCategory);
+
+            try
+            {
+                if (!string.IsNullOrWhiteSpace(category.ImagePath))
+                {
+                    string uploadsFolder = _environment.WebRootPath ?? Path.Combine(Directory.GetCurrentDirectory(), "wwwroot", "uploads");
+                    string imagePath = Path.Combine(uploadsFolder, Path.GetFileName(category.ImagePath));
+
+                    if (File.Exists(imagePath))
+                    {
+                        File.Delete(imagePath);
+                    }
+                }
+
+                _dbContext.Categories.Remove(category);
+                await _dbContext.SaveChangesAsync(cancellationToken);
+
+                return Result.Success();
+            }
+            catch (Exception ex)
+            {
+                return Result.Failure(new Error("Delete.Invalid", ex.Message, StatusCodes.Status500InternalServerError));
+            }
         }
+
         public async Task<Result<CategoryResponse>> UpdateCategoryAsync(int id, CategoryRequest request, CancellationToken cancellationToken)
         {
             var category = await _dbContext.Categories.FindAsync(id);
             if (category is null)
-                return Result.Failure<CategoryResponse>(new Error("Category.NotFound", "This category does not exist", StatusCodes.Status404NotFound));
+                return Result.Failure<CategoryResponse>(CategoryErrors.EmptyCategory);
 
             try
             {
-                string imageUrl = category!.ImagePath!;
+                
+                if (string.IsNullOrWhiteSpace(request.Name))
+                    return Result.Failure<CategoryResponse>(new Error("InvalidRequest", "Category name cannot be empty", StatusCodes.Status400BadRequest));
+
+                string uploadsFolder = _environment.WebRootPath ?? Path.Combine(Directory.GetCurrentDirectory(), "wwwroot", "uploads");
+
+                if (!Directory.Exists(uploadsFolder))
+                {
+                    Directory.CreateDirectory(uploadsFolder);
+                }
+
+                string imageUrl = category.ImagePath!;
 
                 if (request.image is not null)
                 {
-                    string uploadsFolder = Path.Combine(_environment.WebRootPath, "uploads");
                     string uniqueFileName = $"{Guid.NewGuid()}{Path.GetExtension(request.image.FileName)}";
                     string filePath = Path.Combine(uploadsFolder, uniqueFileName);
 
+                    
+                    if (!string.IsNullOrWhiteSpace(category.ImagePath))
+                    {
+                        string oldFilePath = Path.Combine(uploadsFolder, Path.GetFileName(category.ImagePath));
+                        if (File.Exists(oldFilePath))
+                        {
+                            File.Delete(oldFilePath);
+                        }
+                    }
+
+                    
                     using (var fileStream = File.Create(filePath))
                     {
-                        await request.image.CopyToAsync(fileStream);
+                        await request.image.CopyToAsync(fileStream, cancellationToken);
                     }
 
                     imageUrl = $"/uploads/{uniqueFileName}";
                 }
+
                 category.Name = request.Name;
                 category.ImagePath = imageUrl;
 
@@ -112,7 +157,7 @@
             }
             catch (Exception ex)
             {
-                return Result.Failure<CategoryResponse>(new Error("Update.Invalid", ex.Message, StatusCodes.Status409Conflict));
+                return Result.Failure<CategoryResponse>(new Error("Update.Invalid", ex.Message, StatusCodes.Status500InternalServerError));
             }
         }
     }

@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "216FdtxKypIvSTN6Z1se78gn1uWHhQC2CnttXd9RsF4=",
+  "Hash": "lidvKhXlh2FkwUMXm07UIzr7sqN4bOs2dOEq9mbZk5k=",
   "Source": "E_Commerce",
   "BasePath": "_content/E_Commerce",
   "Mode": "Default",
@@ -16,6 +16,63 @@
     }
   ],
   "Assets": [
+    {
+      "Identity": "D:\\Projects\\MenuApi\\E_Commerce\\wwwroot\\2e6d73ec-bb84-4630-b2d9-46f6a0d0d166.PNG",
+      "SourceId": "E_Commerce",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\Projects\\MenuApi\\E_Commerce\\wwwroot\\",
+      "BasePath": "_content/E_Commerce",
+      "RelativePath": "2e6d73ec-bb84-4630-b2d9-46f6a0d0d166.PNG",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\2e6d73ec-bb84-4630-b2d9-46f6a0d0d166.PNG"
+    },
+    {
+      "Identity": "D:\\Projects\\MenuApi\\E_Commerce\\wwwroot\\52c97b7b-0078-49cf-b9eb-55b174a5a1f9.webp",
+      "SourceId": "E_Commerce",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\Projects\\MenuApi\\E_Commerce\\wwwroot\\",
+      "BasePath": "_content/E_Commerce",
+      "RelativePath": "52c97b7b-0078-49cf-b9eb-55b174a5a1f9.webp",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\52c97b7b-0078-49cf-b9eb-55b174a5a1f9.webp"
+    },
+    {
+      "Identity": "D:\\Projects\\MenuApi\\E_Commerce\\wwwroot\\70aa568f-9291-4604-946b-95bc0ce2bae6.PNG",
+      "SourceId": "E_Commerce",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\Projects\\MenuApi\\E_Commerce\\wwwroot\\",
+      "BasePath": "_content/E_Commerce",
+      "RelativePath": "70aa568f-9291-4604-946b-95bc0ce2bae6.PNG",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\70aa568f-9291-4604-946b-95bc0ce2bae6.PNG"
+    },
     {
       "Identity": "D:\\Projects\\MenuApi\\E_Commerce\\wwwroot\\8fac99ad-459b-4dc0-9ee6-a7a64b920797.PNG",
       "SourceId": "E_Commerce",
@@ -55,12 +112,12 @@
       "OriginalItemSpec": "wwwroot\\93a85e43-d7fc-4255-93da-8e5882d3825a"
     },
     {
-      "Identity": "D:\\Projects\\MenuApi\\E_Commerce\\wwwroot\\a019345c-3cc0-4258-aeb0-ca2d53e76ef9.PNG",
+      "Identity": "D:\\Projects\\MenuApi\\E_Commerce\\wwwroot\\a85cbb8e-acc8-413b-b264-61abf49249b6.PNG",
       "SourceId": "E_Commerce",
       "SourceType": "Discovered",
       "ContentRoot": "D:\\Projects\\MenuApi\\E_Commerce\\wwwroot\\",
       "BasePath": "_content/E_Commerce",
-      "RelativePath": "a019345c-3cc0-4258-aeb0-ca2d53e76ef9.PNG",
+      "RelativePath": "a85cbb8e-acc8-413b-b264-61abf49249b6.PNG",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
@@ -71,7 +128,7 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\a019345c-3cc0-4258-aeb0-ca2d53e76ef9.PNG"
+      "OriginalItemSpec": "wwwroot\\a85cbb8e-acc8-413b-b264-61abf49249b6.PNG"
     },
     {
       "Identity": "D:\\Projects\\MenuApi\\E_Commerce\\wwwroot\\b6895c93-1698-493e-9af6-8b70434444a9.PNG",

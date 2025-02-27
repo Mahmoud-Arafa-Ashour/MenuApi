@@ -2,6 +2,7 @@
 {
     [Route("api/[controller]")]
     [ApiController]
+    [Authorize]
     public class CategoryController(ICategoryServices categoryServices, ApplicationDbContext dbContext, IOptions<JwtOptions> jwtOptions) : ControllerBase
     {
         private readonly ICategoryServices _categoryServices = categoryServices;
