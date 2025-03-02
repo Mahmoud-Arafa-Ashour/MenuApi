@@ -6,7 +6,7 @@
         {
             builder.Property(x => x.Price)
                 .HasPrecision(18, 4);
-            builder.HasIndex(x=>x.Name)
+            builder.HasIndex(x => x.Name)
                 .IsUnique();
         }
     }

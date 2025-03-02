@@ -30,5 +30,14 @@
             public static readonly Error EmptyCategory =
                 new Error("Category.NotFound", "No Category with this id", StatusCodes.Status404NotFound);
         }
+        public class DiscountErrors
+        {
+            public static readonly Error InvalidPrice =
+                new Error("Discount.InvalidPrice", "New Price Must be less than Old Price", StatusCodes.Status409Conflict);
+            public static readonly Error InvalidDateRange =
+                new Error("Discount.InvalidDateRange", "EndDate must be more than Start Date", StatusCodes.Status409Conflict);
+            public static readonly Error ExistingDiscount =
+                new Error("Discount.ExistingDiscount", "This item have a discount already", StatusCodes.Status409Conflict);
+        }
     }
 }

@@ -7,11 +7,22 @@ namespace E_Commerce.Persistant.EntityConfigurations
         {
             builder.HasKey(x => x.Id);
             builder.Property(x => x.Id)
-            .ValueGeneratedOnAdd();
+                .ValueGeneratedOnAdd();
+
             builder.HasIndex(x => x.Name).IsUnique();
+
+            // ✅ One-to-Many: Category → Items
             builder.HasMany(x => x.items)
                 .WithOne(x => x.Category)
-                .HasForeignKey(x => x.CategoryId);
+                .HasForeignKey(x => x.CategoryId)
+                .OnDelete(DeleteBehavior.Cascade);
+
+            // ✅ One-to-Many: Category → Discounts
+            builder.HasMany(x => x.Discounts)
+                .WithOne(x => x.Category)
+                .HasForeignKey(x => x.CategoryId)
+                .OnDelete(DeleteBehavior.Cascade);
         }
+
     }
 }

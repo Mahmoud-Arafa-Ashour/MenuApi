@@ -26,4 +26,5 @@ global using System.Security.Claims;
 global using Microsoft.EntityFrameworkCore.Metadata.Builders;
 global using Microsoft.EntityFrameworkCore.Migrations;
 global using E_Commerce.Contracts.Item;
-
+global using E_Commerce.Contracts.Discount;
+global using static E_Commerce.Abstractions.Errors;

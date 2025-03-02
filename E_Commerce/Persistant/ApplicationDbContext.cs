@@ -6,6 +6,7 @@
         private readonly IHttpContextAccessor _httpContextAccessor = httpContextAccessor;
         public DbSet<Category> Categories { get; set; }
         public DbSet<Item> Items { get; set; }
+        public DbSet<Discount> Discounts { get; set; }
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
             modelBuilder.ApplyConfigurationsFromAssembly(Assembly.GetExecutingAssembly());

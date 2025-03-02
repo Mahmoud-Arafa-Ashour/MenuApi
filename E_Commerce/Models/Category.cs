@@ -4,7 +4,8 @@
     {
         public int Id { get; set; }
         public string Name { get; set; } = string.Empty;
-        public string? ImagePath { get; set; } // Store file path as string
+        public string? ImagePath { get; set; }
+        public ICollection<Discount> Discounts { get; set; } = [];
         public ICollection<Item> items { get; set; } = [];
     }
 }
