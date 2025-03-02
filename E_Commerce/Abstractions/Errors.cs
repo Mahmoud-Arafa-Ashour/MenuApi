@@ -38,6 +38,8 @@
                 new Error("Discount.InvalidDateRange", "EndDate must be more than Start Date", StatusCodes.Status409Conflict);
             public static readonly Error ExistingDiscount =
                 new Error("Discount.ExistingDiscount", "This item have a discount already", StatusCodes.Status409Conflict);
+            public static readonly Error InvalidDiscount =
+                new Error("Discount.Invalid", "No Discount Match this data", StatusCodes.Status409Conflict);
         }
     }
 }
