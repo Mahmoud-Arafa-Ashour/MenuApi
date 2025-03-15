@@ -1,0 +1,31 @@
+﻿using Microsoft.AspNetCore.Http;
+using Microsoft.AspNetCore.Mvc;
+
+namespace E_Commerce.Controllers
+{
+    [Route("api/[controller]/[Action]")]
+    [ApiController]
+    [Authorize]
+    public class OfferItemController(IOfferItemServices offerItemServices) : ControllerBase
+    {
+        private readonly IOfferItemServices _offerItemServices = offerItemServices;
+        [HttpGet]
+        public async Task<IActionResult> Get(int offerId, int categoryId, int itemId , CancellationToken cancellationToken)
+        {
+            var result = await _offerItemServices.Get(offerId, categoryId, itemId, cancellationToken);
+            return result.IsSuccess ? Ok(result.Value) : result.ToProblem();
+        }
+        [HttpPost]
+        public async Task<IActionResult> Add(int offerId , int categoryId, int itemId , [FromBody]int Quantity, CancellationToken cancellationToken)
+        {
+            var result = await _offerItemServices.Add(offerId, categoryId, itemId, Quantity, cancellationToken);
+            return result.IsSuccess ? Ok() : result.ToProblem();
+        }
+        [HttpPut]
+        public async Task<IActionResult> Update(int offerId, int categoryId, int itemId, [FromBody] int Quantity, CancellationToken cancellationToken)
+        {
+            var result = await _offerItemServices.Update(offerId, categoryId, itemId, Quantity, cancellationToken);
+            return result.IsSuccess ? Ok() : result.ToProblem();
+        }
+    }
+}

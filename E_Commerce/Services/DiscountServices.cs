@@ -80,7 +80,7 @@ namespace E_Commerce.Services
 
             discount.EndAt = request.EndAt;
             discount.NewPrice = request.NewPrice;
-
+            _dbContext.Discounts.Update(discount);
             await _dbContext.SaveChangesAsync(cancellationToken);
 
             return Result.Success();

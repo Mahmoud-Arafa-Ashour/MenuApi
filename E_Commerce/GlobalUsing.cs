@@ -28,3 +28,9 @@ global using Microsoft.EntityFrameworkCore.Migrations;
 global using E_Commerce.Contracts.Item;
 global using E_Commerce.Contracts.Discount;
 global using static E_Commerce.Abstractions.Errors;
+global using E_Commerce.Contracts.OfferItem;
+global using OneOf;
+global using E_Commerce.Contracts.Offer;
+
+
+

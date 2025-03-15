@@ -8,6 +8,7 @@
         public DbSet<Item> Items { get; set; }
         public DbSet<Discount> Discounts { get; set; }
         public DbSet<Offer> Offers { get; set; }
+        public DbSet<OfferItem> OfferItems { get; set; }
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
             modelBuilder.ApplyConfigurationsFromAssembly(Assembly.GetExecutingAssembly());

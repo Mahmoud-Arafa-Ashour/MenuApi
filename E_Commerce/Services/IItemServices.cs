@@ -1,7 +1,4 @@
-﻿using DocumentFormat.OpenXml.EMMA;
-using E_Commerce.Contracts.Item;
-using OneOf;
-namespace E_Commerce.Services
+﻿namespace E_Commerce.Services
 {
     public interface IItemServices
     {

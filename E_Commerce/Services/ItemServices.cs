@@ -171,7 +171,7 @@ namespace E_Commerce.Services
                 item.Description = request.Description;
                 item.Price = request.Price;
                 item.ImagePath = imageUrl;
-
+                _dbContext.Items.Update(item);
                 await _dbContext.SaveChangesAsync(cancellationToken);
 
                 

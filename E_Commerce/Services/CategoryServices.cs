@@ -149,7 +149,7 @@ namespace E_Commerce.Services
 
                 category.Name = request.Name;
                 category.ImagePath = imageUrl;
-
+                _dbContext.Categories.Update(category);
                 await _dbContext.SaveChangesAsync(cancellationToken);
 
                 var response = new CategoryResponse(category.Name, imageUrl);

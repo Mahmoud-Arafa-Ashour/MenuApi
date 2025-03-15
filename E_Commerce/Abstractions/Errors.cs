@@ -41,5 +41,15 @@
             public static readonly Error InvalidDiscount =
                 new Error("Discount.Invalid", "No Discount Match this data", StatusCodes.Status409Conflict);
         }
+        public class OfferErrors
+        {
+            public static readonly Error EmptyOffer =
+                new Error("Offer.NotFound", "No Offer with this id", StatusCodes.Status404NotFound);
+        }
+        public static class OfferItemErrors
+        {
+            public static readonly Error EmptyOfferItem =
+                new Error("OfferItem.NotFound", "No OfferItem with this id", StatusCodes.Status404NotFound);
+        }
     }
 }

@@ -20,6 +20,8 @@ namespace E_Commerce
             services.AddScoped<IUserServices, UserServices>();
             services.AddScoped<IItemServices, ItemServices>();
             services.AddScoped<IDiscountServices, DiscountServices>();
+            services.AddScoped<IOfferServices, OfferServices>();
+            services.AddScoped<IOfferItemServices , OfferItemServices>();
             services.AddSingleton<IJwtProvidor, JwtProvidor>();
             return services;
         }
