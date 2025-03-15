@@ -13,10 +13,14 @@
             return result.IsSuccess ? Ok(result.Value) : result.ToProblem();
         }
         [HttpGet("Get-Item")]
-        public async Task<IActionResult> GetItem(int CatId , int id)
+        public async Task<IActionResult> GetItem(int CatId, int id)
         {
-            var result = await _itemServices.GetItemAsync(CatId , id);
-            return result.IsSuccess ? Ok(result.Value) : result.ToProblem();
+            var result = await _itemServices.GetItem(CatId, id);
+            return result.Match(
+                ItemResponse => Ok(ItemResponse),
+                DiscountResponse => Ok(DiscountResponse),
+                Error => Ok(ItemErrors.Emptyitem)
+                );
         }
         [HttpPost("Add-New-Item/{Catid:int}")]
         public async Task<IActionResult> AddItem(int Catid, [FromForm] ItemRequest request)

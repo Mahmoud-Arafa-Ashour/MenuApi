@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "D:\\Projects\\MenuApi\\E_Commerce\\E_Commerce.csproj": {}
+    "D:\\Projects\\MenuApi\\MenuApi\\E_Commerce\\E_Commerce.csproj": {}
   },
   "projects": {
-    "D:\\Projects\\MenuApi\\E_Commerce\\E_Commerce.csproj": {
+    "D:\\Projects\\MenuApi\\MenuApi\\E_Commerce\\E_Commerce.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Projects\\MenuApi\\E_Commerce\\E_Commerce.csproj",
+        "projectUniqueName": "D:\\Projects\\MenuApi\\MenuApi\\E_Commerce\\E_Commerce.csproj",
         "projectName": "E_Commerce",
-        "projectPath": "D:\\Projects\\MenuApi\\E_Commerce\\E_Commerce.csproj",
+        "projectPath": "D:\\Projects\\MenuApi\\MenuApi\\E_Commerce\\E_Commerce.csproj",
         "packagesPath": "C:\\Users\\HP\\.nuget\\packages\\",
-        "outputPath": "D:\\Projects\\MenuApi\\E_Commerce\\obj\\",
+        "outputPath": "D:\\Projects\\MenuApi\\MenuApi\\E_Commerce\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -44,7 +44,8 @@
           "enableAudit": "true",
           "auditLevel": "low",
           "auditMode": "direct"
-        }
+        },
+        "SdkAnalysisLevel": "9.0.200"
       },
       "frameworks": {
         "net8.0": {
@@ -53,6 +54,10 @@
             "AutoMapper": {
               "target": "Package",
               "version": "[13.0.1, )"
+            },
+            "DocumentFormat.OpenXml": {
+              "target": "Package",
+              "version": "[3.3.0, )"
             },
             "FluentValidation": {
               "target": "Package",
@@ -106,6 +111,10 @@
               "target": "Package",
               "version": "[1.0.0, )"
             },
+            "OneOf": {
+              "target": "Package",
+              "version": "[3.0.271, )"
+            },
             "Swashbuckle.AspNetCore": {
               "target": "Package",
               "version": "[7.2.0, )"
@@ -130,7 +139,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.302/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.201/PortableRuntimeIdentifierGraph.json"
         }
       }
     }

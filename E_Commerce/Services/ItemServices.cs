@@ -1,4 +1,5 @@
 ﻿
+using OneOf;
 using static E_Commerce.Abstractions.Errors;
 
 namespace E_Commerce.Services
@@ -182,6 +183,28 @@ namespace E_Commerce.Services
                 Console.WriteLine($"[UpdateItemAsync Error] {ex.Message}");
                 return Result.Failure<ItemResponse>(new Error("Update.Invalid", ex.Message, StatusCodes.Status500InternalServerError));
             }
+        }
+
+        public async Task<OneOf<ItemResponse, DiscountResponse, Error>> GetItem(int Catid, int id)
+        {
+            var response = await _dbContext.Items.FirstOrDefaultAsync(x => x.CategoryId == Catid && x.Id == id);
+            if (response is null)
+            {
+                return ItemErrors.Emptyitem;
+            }
+            var discount = await _dbContext.Discounts.FirstOrDefaultAsync(x => x.CategoryId == Catid && x.ItemId == id && (x.EndAt >= DateOnly.FromDateTime(DateTime.UtcNow)));
+            if (discount is null)
+                return response.Adapt<ItemResponse>();
+            var actualDiscount = new DiscountResponse(
+                response.Name,
+                response.Description,
+                discount.StartAt,
+                discount.EndAt,
+                response.Price,
+                discount.NewPrice,
+                response.ImagePath
+            );
+            return actualDiscount;
         }
     }
 }

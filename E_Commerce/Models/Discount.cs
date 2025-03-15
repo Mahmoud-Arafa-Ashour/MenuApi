@@ -9,9 +9,6 @@
         public DateOnly EndAt { get; set; }
         public decimal OldPrice { get; set; }
         public decimal NewPrice { get; set; }
-
-        public bool IsActive => EndAt >= DateOnly.FromDateTime(DateTime.UtcNow);
-
         public Category Category { get; set; } = default!;
         public Item Item { get; set; } = default!;
     }

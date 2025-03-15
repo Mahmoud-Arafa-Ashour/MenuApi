@@ -26,7 +26,7 @@ namespace E_Commerce.Services
             try
             {
                 await _dbContext.Discounts
-                    .Where(x => x.CategoryId == CategoryID && x.ItemId == ItemId && !x.IsActive)
+                    .Where(x => x.CategoryId == CategoryID && x.ItemId == ItemId && !(x.EndAt >= DateOnly.FromDateTime(DateTime.UtcNow)))
                     .ExecuteDeleteAsync(cancellationToken);
 
                 var IsExistedDiscount = await _dbContext.Discounts
@@ -109,7 +109,7 @@ namespace E_Commerce.Services
                     x.Price,
                     x.ImagePath,
                     Discount = _dbContext.Discounts
-                        .Where(d => d.CategoryId == categoryId && d.ItemId == itemId && d.IsActive)
+                        .Where(d => d.CategoryId == categoryId && d.ItemId == itemId && d.EndAt >= DateOnly.FromDateTime(DateTime.UtcNow))
                         .Select(d => new { d.StartAt, d.EndAt, d.NewPrice })
                         .FirstOrDefault()
                 })
@@ -150,7 +150,7 @@ namespace E_Commerce.Services
                     x.Price,
                     x.ImagePath,
                     Discount = _dbContext.Discounts
-                        .Where(d => d.CategoryId == categoryId && d.ItemId == x.Id && d.IsActive)
+                        .Where(d => d.CategoryId == categoryId && d.ItemId == x.Id && (d.EndAt >= DateOnly.FromDateTime(DateTime.UtcNow)))
                         .Select(d => new { d.StartAt, d.EndAt, d.NewPrice })
                         .FirstOrDefault()
                 })
