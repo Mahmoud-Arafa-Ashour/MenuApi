@@ -4,6 +4,7 @@ using E_Commerce.Persistant;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 
 #nullable disable
@@ -11,9 +12,11 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace E_Commerce.Migrations
 {
     [DbContext(typeof(ApplicationDbContext))]
-    partial class ApplicationDbContextModelSnapshot : ModelSnapshot
+    [Migration("20250315002846_Adding Offer")]
+    partial class AddingOffer
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        /// <inheritdoc />
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -144,29 +147,6 @@ namespace E_Commerce.Migrations
                     b.HasKey("Id");
 
                     b.ToTable("Offers");
-                });
-
-            modelBuilder.Entity("E_Commerce.Models.OfferItem", b =>
-                {
-                    b.Property<int>("OfferId")
-                        .HasColumnType("int");
-
-                    b.Property<int>("CategoryId")
-                        .HasColumnType("int");
-
-                    b.Property<int>("ItemId")
-                        .HasColumnType("int");
-
-                    b.Property<int>("Quantity")
-                        .HasColumnType("int");
-
-                    b.HasKey("OfferId", "CategoryId", "ItemId");
-
-                    b.HasIndex("CategoryId");
-
-                    b.HasIndex("ItemId");
-
-                    b.ToTable("OfferItem");
                 });
 
             modelBuilder.Entity("E_Commerce.Persistant.ApplicationUser", b =>
@@ -412,33 +392,6 @@ namespace E_Commerce.Migrations
                     b.Navigation("Category");
                 });
 
-            modelBuilder.Entity("E_Commerce.Models.OfferItem", b =>
-                {
-                    b.HasOne("E_Commerce.Models.Category", "Category")
-                        .WithMany("OfferItems")
-                        .HasForeignKey("CategoryId")
-                        .OnDelete(DeleteBehavior.NoAction)
-                        .IsRequired();
-
-                    b.HasOne("E_Commerce.Models.Item", "Item")
-                        .WithMany("OfferItems")
-                        .HasForeignKey("ItemId")
-                        .OnDelete(DeleteBehavior.NoAction)
-                        .IsRequired();
-
-                    b.HasOne("E_Commerce.Models.Offer", "Offer")
-                        .WithMany("OfferItems")
-                        .HasForeignKey("OfferId")
-                        .OnDelete(DeleteBehavior.NoAction)
-                        .IsRequired();
-
-                    b.Navigation("Category");
-
-                    b.Navigation("Item");
-
-                    b.Navigation("Offer");
-                });
-
             modelBuilder.Entity("E_Commerce.Persistant.ApplicationUser", b =>
                 {
                     b.OwnsMany("E_Commerce.Models.RefreshTokens", "RefreshTokens", b1 =>
@@ -531,21 +484,12 @@ namespace E_Commerce.Migrations
                 {
                     b.Navigation("Discounts");
 
-                    b.Navigation("OfferItems");
-
                     b.Navigation("items");
                 });
 
             modelBuilder.Entity("E_Commerce.Models.Item", b =>
                 {
                     b.Navigation("Discount");
-
-                    b.Navigation("OfferItems");
-                });
-
-            modelBuilder.Entity("E_Commerce.Models.Offer", b =>
-                {
-                    b.Navigation("OfferItems");
                 });
 #pragma warning restore 612, 618
         }

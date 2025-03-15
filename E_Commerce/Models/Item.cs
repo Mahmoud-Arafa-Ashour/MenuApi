@@ -11,6 +11,7 @@
 
         public Category Category { get; set; } = default!;
         public Discount? Discount { get; set; }
+        public ICollection<OfferItem> OfferItems { get; set; } = []; // ✅ Fix here
     }
 
 }

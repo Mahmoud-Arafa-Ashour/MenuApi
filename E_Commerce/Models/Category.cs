@@ -7,5 +7,6 @@
         public string? ImagePath { get; set; }
         public ICollection<Discount> Discounts { get; set; } = [];
         public ICollection<Item> items { get; set; } = [];
+        public ICollection<OfferItem> OfferItems { get; set; } = []; // ✅ Fix here
     }
 }

@@ -552,3 +552,11 @@ D:\Projects\MenuApi\MenuApi\E_Commerce\bin\Debug\net8.0\DocumentFormat.OpenXml.d
 D:\Projects\MenuApi\MenuApi\E_Commerce\bin\Debug\net8.0\DocumentFormat.OpenXml.Framework.dll
 D:\Projects\MenuApi\MenuApi\E_Commerce\bin\Debug\net8.0\OneOf.dll
 D:\Projects\MenuApi\MenuApi\E_Commerce\bin\Debug\net8.0\System.IO.Packaging.dll
+D:\Projects\MenuApi\E_Commerce\bin\Debug\net8.0\E_Commerce.staticwebassets.endpoints.json
+D:\Projects\MenuApi\E_Commerce\bin\Debug\net8.0\DocumentFormat.OpenXml.dll
+D:\Projects\MenuApi\E_Commerce\bin\Debug\net8.0\DocumentFormat.OpenXml.Framework.dll
+D:\Projects\MenuApi\E_Commerce\bin\Debug\net8.0\OneOf.dll
+D:\Projects\MenuApi\E_Commerce\bin\Debug\net8.0\System.IO.Packaging.dll
+D:\Projects\MenuApi\E_Commerce\obj\Debug\net8.0\staticwebassets.build.endpoints.json
+D:\Projects\MenuApi\E_Commerce\obj\Debug\net8.0\staticwebassets\msbuild.E_Commerce.Microsoft.AspNetCore.StaticWebAssetEndpoints.props
+D:\Projects\MenuApi\E_Commerce\obj\Debug\net8.0\staticwebassets.upToDateCheck.txt
