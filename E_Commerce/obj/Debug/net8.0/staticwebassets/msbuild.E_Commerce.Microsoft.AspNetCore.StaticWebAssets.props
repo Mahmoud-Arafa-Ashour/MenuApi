@@ -36,6 +36,24 @@
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\52c97b7b-0078-49cf-b9eb-55b174a5a1f9.webp'))</OriginalItemSpec>
     </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\6c82e550-fe16-4aca-810e-6c053273289d.webp'))">
+      <SourceType>Package</SourceType>
+      <SourceId>E_Commerce</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/E_Commerce</BasePath>
+      <RelativePath>6c82e550-fe16-4aca-810e-6c053273289d.webp</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <Fingerprint>by96ool824</Fingerprint>
+      <Integrity>HcCkFc3y0sCyMBY2js8Eh2GTVWNjNU6GC52uopWCasg=</Integrity>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\6c82e550-fe16-4aca-810e-6c053273289d.webp'))</OriginalItemSpec>
+    </StaticWebAsset>
     <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\70aa568f-9291-4604-946b-95bc0ce2bae6.PNG'))">
       <SourceType>Package</SourceType>
       <SourceId>E_Commerce</SourceId>

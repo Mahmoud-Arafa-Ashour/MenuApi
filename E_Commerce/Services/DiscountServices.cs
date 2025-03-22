@@ -87,9 +87,7 @@ namespace E_Commerce.Services
         }
         public async Task<Result> DeleteDiscountAsync(int categoryId, int itemId, CancellationToken cancellationToken = default)
         {
-            var discount = await _dbContext.Discounts
-                .FirstOrDefaultAsync(x => x.CategoryId == categoryId && x.ItemId == itemId, cancellationToken);
-
+            var discount = await _dbContext.Discounts.FirstOrDefaultAsync(x => x.CategoryId == categoryId && x.ItemId == itemId, cancellationToken);
             if (discount is null)
                 return Result.Failure(DiscountErrors.InvalidDiscount);
 

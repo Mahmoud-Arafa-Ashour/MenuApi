@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "oMrnJXJ9ZpFGPuSx4SM1b8xWvge55B5DmtA6LGBlOAM=",
+  "Hash": "+X3PE6AEbTeQVkGuW5UzboyizsHue4aoo6o3gF+9/fQ=",
   "Source": "E_Commerce",
   "BasePath": "_content/E_Commerce",
   "Mode": "Default",
@@ -57,6 +57,27 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\52c97b7b-0078-49cf-b9eb-55b174a5a1f9.webp"
+    },
+    {
+      "Identity": "D:\\Projects\\MenuApi\\E_Commerce\\wwwroot\\6c82e550-fe16-4aca-810e-6c053273289d.webp",
+      "SourceId": "E_Commerce",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\Projects\\MenuApi\\E_Commerce\\wwwroot\\",
+      "BasePath": "_content/E_Commerce",
+      "RelativePath": "6c82e550-fe16-4aca-810e-6c053273289d#[.{fingerprint}]?.webp",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "by96ool824",
+      "Integrity": "HcCkFc3y0sCyMBY2js8Eh2GTVWNjNU6GC52uopWCasg=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\6c82e550-fe16-4aca-810e-6c053273289d.webp"
     },
     {
       "Identity": "D:\\Projects\\MenuApi\\E_Commerce\\wwwroot\\70aa568f-9291-4604-946b-95bc0ce2bae6.PNG",
@@ -694,6 +715,88 @@
         {
           "Name": "Last-Modified",
           "Value": "Fri, 14 Mar 2025 22:32:06 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-HcCkFc3y0sCyMBY2js8Eh2GTVWNjNU6GC52uopWCasg="
+        }
+      ]
+    },
+    {
+      "Route": "6c82e550-fe16-4aca-810e-6c053273289d.by96ool824.webp",
+      "AssetFile": "D:\\Projects\\MenuApi\\E_Commerce\\wwwroot\\6c82e550-fe16-4aca-810e-6c053273289d.webp",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "8102"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/webp"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"HcCkFc3y0sCyMBY2js8Eh2GTVWNjNU6GC52uopWCasg=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 20 Mar 2025 00:02:32 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "by96ool824"
+        },
+        {
+          "Name": "label",
+          "Value": "6c82e550-fe16-4aca-810e-6c053273289d.webp"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-HcCkFc3y0sCyMBY2js8Eh2GTVWNjNU6GC52uopWCasg="
+        }
+      ]
+    },
+    {
+      "Route": "6c82e550-fe16-4aca-810e-6c053273289d.webp",
+      "AssetFile": "D:\\Projects\\MenuApi\\E_Commerce\\wwwroot\\6c82e550-fe16-4aca-810e-6c053273289d.webp",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "8102"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/webp"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"HcCkFc3y0sCyMBY2js8Eh2GTVWNjNU6GC52uopWCasg=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 20 Mar 2025 00:02:32 GMT"
         },
         {
           "Name": "Cache-Control",

@@ -1,5 +1,6 @@
 wwwroot\2e6d73ec-bb84-4630-b2d9-46f6a0d0d166.PNG
 wwwroot\52c97b7b-0078-49cf-b9eb-55b174a5a1f9.webp
+wwwroot\6c82e550-fe16-4aca-810e-6c053273289d.webp
 wwwroot\70aa568f-9291-4604-946b-95bc0ce2bae6.PNG
 wwwroot\8fac99ad-459b-4dc0-9ee6-a7a64b920797.PNG
 wwwroot\93a85e43-d7fc-4255-93da-8e5882d3825a

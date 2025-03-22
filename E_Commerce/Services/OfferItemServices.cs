@@ -7,7 +7,7 @@ namespace E_Commerce.Services
     {
         private readonly ApplicationDbContext _dbContext = dbContext;
 
-        public async Task<Result> Add(int offerId, int categoryId, int itemId, int Quantity, CancellationToken cancellationToken)
+        public async Task<Result> Add(int offerId, int categoryId, int itemId, OfferItemRequest request, CancellationToken cancellationToken)
         {
             var isExistedOffer = await _dbContext.Offers.AnyAsync(x => x.Id == offerId , cancellationToken);
             if (!isExistedOffer)
@@ -23,13 +23,13 @@ namespace E_Commerce.Services
                 OfferId = offerId,
                 CategoryId = categoryId,
                 ItemId = itemId,
-                Quantity = Quantity
+                Quantity = request.Quantity,
             };
             _dbContext.OfferItems.Add(offerItem);
             await _dbContext.SaveChangesAsync(cancellationToken);
             return Result.Success();
         }
-        public async Task<Result> Update(int offerId, int categoryId, int itemId, int Quantity, CancellationToken cancellationToken)
+        public async Task<Result> Update(int offerId, int categoryId, int itemId, OfferItemRequest request, CancellationToken cancellationToken)
         {
             var isExistedOffer = await _dbContext.Offers.AnyAsync(x => x.Id == offerId, cancellationToken);
             if (!isExistedOffer)
@@ -44,7 +44,7 @@ namespace E_Commerce.Services
                 await _dbContext.OfferItems.FirstOrDefaultAsync(x => x.OfferId == offerId && x.CategoryId == categoryId && x.ItemId == itemId, cancellationToken);
             if (isExistedOfferItem == null)
                 return Result.Failure(OfferItemErrors.EmptyOfferItem);
-            isExistedOfferItem.Quantity = Quantity;
+            isExistedOfferItem.Quantity = request.Quantity;
             _dbContext.OfferItems.Update(isExistedOfferItem);
             await _dbContext.SaveChangesAsync(cancellationToken);
             return Result.Success();
@@ -53,7 +53,7 @@ namespace E_Commerce.Services
         public async Task<Result<OfferItemResponse>> Get(int offerId, int categoryId, int itemId, CancellationToken cancellationToken)
         {
             var response = await _dbContext.OfferItems.
-                Include(x => x.Item.Name).
+                Include(x => x.Item).
                 FirstOrDefaultAsync(x => x.OfferId == offerId && x.CategoryId == categoryId && x.ItemId == itemId, cancellationToken);
             if(response == null)
                 return Result.Failure<OfferItemResponse>(OfferItemErrors.EmptyOfferItem);
@@ -63,6 +63,26 @@ namespace E_Commerce.Services
                 Quantity: response.Quantity
                 );
             return Result.Success(offer);
+        }
+
+        public async Task<Result> Delete(int offerId, int categoryId, int itemId, CancellationToken cancellationToken)
+        {
+            var isExistedOffer = await _dbContext.Offers.AnyAsync(x => x.Id == offerId, cancellationToken);
+            if (!isExistedOffer)
+                return Result.Failure(OfferErrors.EmptyOffer);
+            var isExistedCategory = await _dbContext.Categories.AnyAsync(x => x.Id == categoryId, cancellationToken);
+            if (!isExistedOffer)
+                return Result.Failure(CategoryErrors.EmptyCategory);
+            var isExistedItem = await _dbContext.Items.AnyAsync(x => x.Id == itemId, cancellationToken);
+            if (!isExistedOffer)
+                return Result.Failure(ItemErrors.Emptyitem);
+            var isExistedOfferItem =
+                await _dbContext.OfferItems.FirstOrDefaultAsync(x => x.OfferId == offerId && x.CategoryId == categoryId && x.ItemId == itemId, cancellationToken);
+            if (isExistedOfferItem == null)
+                return Result.Failure(OfferItemErrors.EmptyOfferItem);
+            _dbContext.OfferItems.Remove(isExistedOfferItem);
+            await _dbContext.SaveChangesAsync(cancellationToken);
+            return Result.Success();
         }
     }
 }

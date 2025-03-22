@@ -1,13 +1,12 @@
-﻿
-using OneOf;
-using static E_Commerce.Abstractions.Errors;
-
-namespace E_Commerce.Services
+﻿namespace E_Commerce.Services
 {
     public class ItemServices(ApplicationDbContext dbContext , IWebHostEnvironment environment) : IItemServices
     {
+        #region Members
         private readonly ApplicationDbContext _dbContext = dbContext;
         private readonly IWebHostEnvironment _environment = environment;
+        #endregion
+        #region Methods
         public async Task<Result<IEnumerable<ItemResponse>>> GetAllItemsAsync(int CatId)
         {
             var IsExistedCategory = await _dbContext.Categories.FindAsync(CatId);
@@ -206,5 +205,6 @@ namespace E_Commerce.Services
             );
             return actualDiscount;
         }
+        #endregion
     }
 }

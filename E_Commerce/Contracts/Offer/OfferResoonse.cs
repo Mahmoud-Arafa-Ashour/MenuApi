@@ -5,8 +5,8 @@
         string Name,
         string? Description,
         string? Photo,
-        DateTime StartAt,
-        DateTime EndAt,
+        DateOnly StartDate,
+        DateOnly EndDate,
         decimal Price,
         ICollection<OfferItemResponse> OfferItems
         );

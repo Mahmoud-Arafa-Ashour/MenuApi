@@ -45,6 +45,8 @@
         {
             public static readonly Error EmptyOffer =
                 new Error("Offer.NotFound", "No Offer with this id", StatusCodes.Status404NotFound);
+            public static readonly Error NotValidOffers =
+                new Error("Offer.NotValid", "No Available Offers right now", StatusCodes.Status404NotFound);
         }
         public static class OfferItemErrors
         {

@@ -3,9 +3,9 @@
     public record OfferRequest
         (string Name ,
         string? Description,
-        IFormFile Photo,
-        DateTime StartDate,
-        DateTime EndDate,
+        IFormFile? Photo,
+        DateOnly StartDate,
+        DateOnly EndDate,
         decimal Price
         );
 }
