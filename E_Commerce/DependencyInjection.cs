@@ -23,6 +23,8 @@ namespace E_Commerce
             services.AddScoped<IOfferServices, OfferServices>();
             services.AddScoped<IOfferItemServices , OfferItemServices>();
             services.AddSingleton<IJwtProvidor, JwtProvidor>();
+            services.AddExceptionHandler<GlobalExceptionHandler>();
+            services.AddProblemDetails();
             return services;
         }
         public static IServiceCollection AddMappsterServices(this IServiceCollection services)

@@ -28,7 +28,7 @@ app.UseStaticFiles();
 app.UseRouting();
 
 app.UseAuthorization();
-
+app.UseExceptionHandler();
 
 app.MapControllers();
 app.Run();
