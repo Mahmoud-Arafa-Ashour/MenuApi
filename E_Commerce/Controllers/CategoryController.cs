@@ -1,6 +1,6 @@
 ﻿namespace E_Commerce.Controllers
 {
-    [Route("api/[controller]")]
+    [Route("api/[controller]/[Action]")]
     [ApiController]
     [Authorize]
     public class CategoryController(ICategoryServices categoryServices, ApplicationDbContext dbContext, IOptions<JwtOptions> jwtOptions) : ControllerBase
@@ -9,22 +9,22 @@
         private readonly ApplicationDbContext _dbContext = dbContext;
         private readonly JwtOptions _jwtOptions = jwtOptions.Value;
 
-        [HttpGet("Displays-all-the-categories")]
-        public async Task<IActionResult> GetAllCategries(CancellationToken cancellationToken)
+        [HttpGet]
+        public async Task<IActionResult> GetAll([FromQuery]RequestedFilters filters,CancellationToken cancellationToken)
         {
-            var response = await _categoryServices.GetAllCatrgoriresAsync(cancellationToken);
+            var response = await _categoryServices.GetAllCatrgoriresAsync(filters,cancellationToken);
             return Ok(response);
         }
         [HttpGet("{id:int}")]
-        public async Task<IActionResult> GetCategoryByid(int id, CancellationToken cancellationToken)
+        public async Task<IActionResult> GetByid(int id, CancellationToken cancellationToken)
         {
             var response = await _categoryServices.GetCategoryById(id, cancellationToken);
             if (response == null)
                 return NotFound();
             return Ok(response);
         }
-        [HttpPost("Create-category")]
-        public async Task<IActionResult> CreateCategory([FromForm] CategoryRequest request)
+        [HttpPost]
+        public async Task<IActionResult> Add([FromForm] CategoryRequest request)
         {
             var result = await _categoryServices.CreateCategoryAsync(request);
 
@@ -35,14 +35,14 @@
 
             return Ok(result.Value);
         }
-        [HttpPut("Update-category/{id:int}")]
-        public async Task<IActionResult> UpdateCategory(int id,[FromForm] CategoryRequest request , CancellationToken cancellationToken)
+        [HttpPut("{id:int}")]
+        public async Task<IActionResult> Update(int id,[FromForm] CategoryRequest request , CancellationToken cancellationToken)
         {
             var result = await _categoryServices.UpdateCategoryAsync(id,request , cancellationToken);
             return result.IsFailure ? result.ToProblem() : NoContent();
         }
         [HttpDelete("{id:int}")]
-        public async Task<IActionResult> DeleteCategory(int id, CancellationToken cancellationToken)
+        public async Task<IActionResult> Delete(int id, CancellationToken cancellationToken)
         {
             var response = await _categoryServices.DeleteCategoryAsync(id, cancellationToken);
             return response.IsFailure ? response.ToProblem() : Ok();

@@ -79,28 +79,23 @@
         }
       }
     },
-    "/api/Category/Displays-all-the-categories": {
-      "get": {
-        "tags": [
-          "Category"
-        ],
-        "responses": {
-          "200": {
-            "description": "OK"
-          }
-        }
-      }
-    },
-    "/api/Category/{id}": {
+    "/api/Category/GetAll": {
       "get": {
         "tags": [
           "Category"
         ],
         "parameters": [
           {
-            "name": "id",
-            "in": "path",
-            "required": true,
+            "name": "PageNumber",
+            "in": "query",
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          },
+          {
+            "name": "PageSize",
+            "in": "query",
             "schema": {
               "type": "integer",
               "format": "int32"
@@ -112,8 +107,10 @@
             "description": "OK"
           }
         }
-      },
-      "delete": {
+      }
+    },
+    "/api/Category/GetByid/{id}": {
+      "get": {
         "tags": [
           "Category"
         ],
@@ -135,7 +132,7 @@
         }
       }
     },
-    "/api/Category/Create-category": {
+    "/api/Category/Add": {
       "post": {
         "tags": [
           "Category"
@@ -173,7 +170,7 @@
         }
       }
     },
-    "/api/Category/Update-category/{id}": {
+    "/api/Category/Update/{id}": {
       "put": {
         "tags": [
           "Category"
@@ -215,6 +212,29 @@
             }
           }
         },
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/Category/Delete/{id}": {
+      "delete": {
+        "tags": [
+          "Category"
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
         "responses": {
           "200": {
             "description": "OK"

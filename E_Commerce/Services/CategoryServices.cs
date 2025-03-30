@@ -7,10 +7,11 @@ namespace E_Commerce.Services
         private readonly ApplicationDbContext _dbContext = dbContext;
         private readonly IWebHostEnvironment _environment = environment;
 
-        public async Task<IEnumerable<CategoryResponse>> GetAllCatrgoriresAsync(CancellationToken cancellationToken)
+        public async Task<Result<PaginatedData<CategoryResponse>>> GetAllCatrgoriresAsync(RequestedFilters filters,CancellationToken cancellationToken)
         {
-            var result = await _dbContext.Categories.ProjectToType<CategoryResponse>().ToListAsync();
-            return result;
+            var result =  _dbContext.Categories.ProjectToType<CategoryResponse>();
+            var paginatedData = await PaginatedData<CategoryResponse>.CreateAsync(result, filters.PageNumber, filters.PageSize, cancellationToken);
+            return Result.Success<PaginatedData<CategoryResponse>>(paginatedData);
         }
         public async Task<CategoryResponse> GetCategoryById(int id, CancellationToken cancellationToken = default)
         {

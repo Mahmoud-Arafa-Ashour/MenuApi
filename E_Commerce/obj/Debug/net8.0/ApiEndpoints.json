@@ -1,40 +1,8 @@
 [
   {
     "ContainingType": "E_Commerce.Controllers.CategoryController",
-    "Method": "GetCategoryByid",
-    "RelativePath": "api/Category/{id}",
-    "HttpMethod": "GET",
-    "IsController": true,
-    "Order": 0,
-    "Parameters": [
-      {
-        "Name": "id",
-        "Type": "System.Int32",
-        "IsRequired": true
-      }
-    ],
-    "ReturnTypes": []
-  },
-  {
-    "ContainingType": "E_Commerce.Controllers.CategoryController",
-    "Method": "DeleteCategory",
-    "RelativePath": "api/Category/{id}",
-    "HttpMethod": "DELETE",
-    "IsController": true,
-    "Order": 0,
-    "Parameters": [
-      {
-        "Name": "id",
-        "Type": "System.Int32",
-        "IsRequired": true
-      }
-    ],
-    "ReturnTypes": []
-  },
-  {
-    "ContainingType": "E_Commerce.Controllers.CategoryController",
-    "Method": "CreateCategory",
-    "RelativePath": "api/Category/Create-category",
+    "Method": "Add",
+    "RelativePath": "api/Category/Add",
     "HttpMethod": "POST",
     "IsController": true,
     "Order": 0,
@@ -54,18 +22,61 @@
   },
   {
     "ContainingType": "E_Commerce.Controllers.CategoryController",
-    "Method": "GetAllCategries",
-    "RelativePath": "api/Category/Displays-all-the-categories",
-    "HttpMethod": "GET",
+    "Method": "Delete",
+    "RelativePath": "api/Category/Delete/{id}",
+    "HttpMethod": "DELETE",
     "IsController": true,
     "Order": 0,
-    "Parameters": [],
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
     "ReturnTypes": []
   },
   {
     "ContainingType": "E_Commerce.Controllers.CategoryController",
-    "Method": "UpdateCategory",
-    "RelativePath": "api/Category/Update-category/{id}",
+    "Method": "GetAll",
+    "RelativePath": "api/Category/GetAll",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "PageNumber",
+        "Type": "System.Int32",
+        "IsRequired": false
+      },
+      {
+        "Name": "PageSize",
+        "Type": "System.Int32",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "E_Commerce.Controllers.CategoryController",
+    "Method": "GetByid",
+    "RelativePath": "api/Category/GetByid/{id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "E_Commerce.Controllers.CategoryController",
+    "Method": "Update",
+    "RelativePath": "api/Category/Update/{id}",
     "HttpMethod": "PUT",
     "IsController": true,
     "Order": 0,
