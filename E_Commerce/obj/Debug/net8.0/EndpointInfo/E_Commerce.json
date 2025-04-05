@@ -370,7 +370,7 @@
         }
       }
     },
-    "/api/Item/Get-Items/{CatId}": {
+    "/api/Item/GetAll/{CatId}": {
       "get": {
         "tags": [
           "Item"
@@ -393,7 +393,7 @@
         }
       }
     },
-    "/api/Item/Get-Item": {
+    "/api/Item/Get/Get-Item": {
       "get": {
         "tags": [
           "Item"
@@ -423,7 +423,7 @@
         }
       }
     },
-    "/api/Item/Add-New-Item/{Catid}": {
+    "/api/Item/Add/{Catid}": {
       "post": {
         "tags": [
           "Item"
@@ -485,7 +485,7 @@
         }
       }
     },
-    "/api/Item/Delete-Item/{Catid}": {
+    "/api/Item/Delete/{Catid}": {
       "delete": {
         "tags": [
           "Item"
@@ -516,7 +516,7 @@
         }
       }
     },
-    "/api/Item/Update-Item/{Catid}": {
+    "/api/Item/Update/{Catid}": {
       "put": {
         "tags": [
           "Item"
@@ -710,7 +710,66 @@
         }
       }
     },
-    "/api/Offer/GetAllOffers": {
+    "/api/Login/confirm-email": {
+      "get": {
+        "tags": [
+          "Login"
+        ],
+        "parameters": [
+          {
+            "name": "userId",
+            "in": "query",
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "code",
+            "in": "query",
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/Login/resent-confirm-email": {
+      "post": {
+        "tags": [
+          "Login"
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/ResentEmailConfirmationRequest"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/ResentEmailConfirmationRequest"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/ResentEmailConfirmationRequest"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/Offer/GetAll": {
       "get": {
         "tags": [
           "Offer"
@@ -722,7 +781,7 @@
         }
       }
     },
-    "/api/Offer/GetOffer": {
+    "/api/Offer/Get": {
       "get": {
         "tags": [
           "Offer"
@@ -744,7 +803,7 @@
         }
       }
     },
-    "/api/Offer/DeleteOffer": {
+    "/api/Offer/Delete": {
       "delete": {
         "tags": [
           "Offer"
@@ -766,7 +825,7 @@
         }
       }
     },
-    "/api/Offer/UpdateOffer": {
+    "/api/Offer/Update": {
       "put": {
         "tags": [
           "Offer"
@@ -841,7 +900,7 @@
         }
       }
     },
-    "/api/Offer/AddOffer": {
+    "/api/Offer/Add": {
       "post": {
         "tags": [
           "Offer"
@@ -1155,6 +1214,16 @@
             "nullable": true
           },
           "resturantName": {
+            "type": "string",
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "ResentEmailConfirmationRequest": {
+        "type": "object",
+        "properties": {
+          "email": {
             "type": "string",
             "nullable": true
           }

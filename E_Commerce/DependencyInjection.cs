@@ -1,7 +1,5 @@
-﻿using FluentValidation;
-using FluentValidation.AspNetCore;
-using Microsoft.Extensions.DependencyInjection;
-using System;
+﻿using Microsoft.AspNetCore.Identity.UI.Services;
+
 namespace E_Commerce
 {
     public static class DependencyInjection
@@ -16,6 +14,7 @@ namespace E_Commerce
             services.AddAuthconfigServices(configuration);
             services.AddConfigServices();
             services.AddScoped<ICategoryServices, CategoryServices>();
+            services.AddScoped<IEmailSender,EmailServices>();
             services.AddScoped<IAuthServices, AuthServices>();
             services.AddScoped<IUserServices, UserServices>();
             services.AddScoped<IItemServices, ItemServices>();
@@ -24,7 +23,10 @@ namespace E_Commerce
             services.AddScoped<IOfferItemServices , OfferItemServices>();
             services.AddSingleton<IJwtProvidor, JwtProvidor>();
             services.AddExceptionHandler<GlobalExceptionHandler>();
+            services.Configure<EmailSettings>(configuration.GetSection(nameof(EmailSettings)));
+            services.Configure<JwtOptions>(configuration.GetSection(JwtOptions.SectionName));
             services.AddProblemDetails();
+            services.AddHttpContextAccessor();
             return services;
         }
         public static IServiceCollection AddMappsterServices(this IServiceCollection services)
@@ -43,7 +45,8 @@ namespace E_Commerce
         public static IServiceCollection AddAuthconfigServices(this IServiceCollection services , IConfiguration configuration)
         {
             services.AddIdentity<ApplicationUser, IdentityRole>()
-                .AddEntityFrameworkStores<ApplicationDbContext>();
+                .AddEntityFrameworkStores<ApplicationDbContext>()
+                .AddDefaultTokenProviders();
             services.Configure<JwtOptions>(configuration.GetSection(JwtOptions.SectionName));
             services.AddAuthentication(options =>
             {

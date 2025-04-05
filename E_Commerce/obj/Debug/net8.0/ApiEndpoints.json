@@ -174,8 +174,8 @@
   },
   {
     "ContainingType": "E_Commerce.Controllers.ItemController",
-    "Method": "AddItem",
-    "RelativePath": "api/Item/Add-New-Item/{Catid}",
+    "Method": "Add",
+    "RelativePath": "api/Item/Add/{Catid}",
     "HttpMethod": "POST",
     "IsController": true,
     "Order": 0,
@@ -210,8 +210,8 @@
   },
   {
     "ContainingType": "E_Commerce.Controllers.ItemController",
-    "Method": "DeleteItem",
-    "RelativePath": "api/Item/Delete-Item/{Catid}",
+    "Method": "Delete",
+    "RelativePath": "api/Item/Delete/{Catid}",
     "HttpMethod": "DELETE",
     "IsController": true,
     "Order": 0,
@@ -231,8 +231,8 @@
   },
   {
     "ContainingType": "E_Commerce.Controllers.ItemController",
-    "Method": "GetItem",
-    "RelativePath": "api/Item/Get-Item",
+    "Method": "Get",
+    "RelativePath": "api/Item/Get/Get-Item",
     "HttpMethod": "GET",
     "IsController": true,
     "Order": 0,
@@ -252,8 +252,8 @@
   },
   {
     "ContainingType": "E_Commerce.Controllers.ItemController",
-    "Method": "GetAllItems",
-    "RelativePath": "api/Item/Get-Items/{CatId}",
+    "Method": "GetAll",
+    "RelativePath": "api/Item/GetAll/{CatId}",
     "HttpMethod": "GET",
     "IsController": true,
     "Order": 0,
@@ -268,8 +268,8 @@
   },
   {
     "ContainingType": "E_Commerce.Controllers.ItemController",
-    "Method": "UpdateItem",
-    "RelativePath": "api/Item/Update-Item/{Catid}",
+    "Method": "Update",
+    "RelativePath": "api/Item/Update/{Catid}",
     "HttpMethod": "PUT",
     "IsController": true,
     "Order": 0,
@@ -325,6 +325,27 @@
   },
   {
     "ContainingType": "E_Commerce.Controllers.LoginController",
+    "Method": "ConfirmEmailGet",
+    "RelativePath": "api/Login/confirm-email",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "userId",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "code",
+        "Type": "System.String",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "E_Commerce.Controllers.LoginController",
     "Method": "RefreshTokenAsync",
     "RelativePath": "api/Login/refresh",
     "HttpMethod": "POST",
@@ -357,6 +378,22 @@
   },
   {
     "ContainingType": "E_Commerce.Controllers.LoginController",
+    "Method": "ResentConfirmEmailAsync",
+    "RelativePath": "api/Login/resent-confirm-email",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "request",
+        "Type": "E_Commerce.Contracts.Auth.ResentEmailConfirmationRequest",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "E_Commerce.Controllers.LoginController",
     "Method": "RevokeRefreshTokenAsync",
     "RelativePath": "api/Login/revoke-refresh-token",
     "HttpMethod": "POST",
@@ -373,8 +410,8 @@
   },
   {
     "ContainingType": "E_Commerce.Controllers.OfferController",
-    "Method": "AddOffer",
-    "RelativePath": "api/Offer/AddOffer",
+    "Method": "Add",
+    "RelativePath": "api/Offer/Add",
     "HttpMethod": "POST",
     "IsController": true,
     "Order": 0,
@@ -414,8 +451,8 @@
   },
   {
     "ContainingType": "E_Commerce.Controllers.OfferController",
-    "Method": "DeleteOffer",
-    "RelativePath": "api/Offer/DeleteOffer",
+    "Method": "Delete",
+    "RelativePath": "api/Offer/Delete",
     "HttpMethod": "DELETE",
     "IsController": true,
     "Order": 0,
@@ -430,18 +467,8 @@
   },
   {
     "ContainingType": "E_Commerce.Controllers.OfferController",
-    "Method": "GetAllOffers",
-    "RelativePath": "api/Offer/GetAllOffers",
-    "HttpMethod": "GET",
-    "IsController": true,
-    "Order": 0,
-    "Parameters": [],
-    "ReturnTypes": []
-  },
-  {
-    "ContainingType": "E_Commerce.Controllers.OfferController",
-    "Method": "GetOffer",
-    "RelativePath": "api/Offer/GetOffer",
+    "Method": "Get",
+    "RelativePath": "api/Offer/Get",
     "HttpMethod": "GET",
     "IsController": true,
     "Order": 0,
@@ -456,8 +483,18 @@
   },
   {
     "ContainingType": "E_Commerce.Controllers.OfferController",
-    "Method": "UpdateOffer",
-    "RelativePath": "api/Offer/UpdateOffer",
+    "Method": "GetAll",
+    "RelativePath": "api/Offer/GetAll",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "E_Commerce.Controllers.OfferController",
+    "Method": "Update",
+    "RelativePath": "api/Offer/Update",
     "HttpMethod": "PUT",
     "IsController": true,
     "Order": 0,

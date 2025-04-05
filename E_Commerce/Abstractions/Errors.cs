@@ -14,6 +14,8 @@
                 new Error("User.DuplicateConfirmation", "This email had been confirmed before", StatusCodes.Status409Conflict);
             public static readonly Error NotFound =
                 new Error("User.NotFound", "This Id is not valid", StatusCodes.Status404NotFound);
+            public static readonly Error InvalidCode =
+                new Error("User.InvalidCode", "InvalidCode", StatusCodes.Status400BadRequest);
         }
         public class TokenErrors
         {

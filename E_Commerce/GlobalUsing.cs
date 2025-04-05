@@ -31,6 +31,6 @@ global using static E_Commerce.Abstractions.Errors;
 global using E_Commerce.Contracts.OfferItem;
 global using OneOf;
 global using E_Commerce.Contracts.Offer;
-
+global using FluentValidation.AspNetCore;
 
 

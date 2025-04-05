@@ -6,7 +6,7 @@ namespace E_Commerce.Controllers
 {
     [Route("api/[controller]/[action]")]
     [ApiController]
-    //[Authorize]
+    [Authorize]
     public class DiscountController(IDiscountServices discountServices) : ControllerBase
     {
         private readonly IDiscountServices _discountServices = discountServices;
