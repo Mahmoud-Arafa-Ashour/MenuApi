@@ -32,5 +32,7 @@ global using E_Commerce.Contracts.OfferItem;
 global using OneOf;
 global using E_Commerce.Contracts.Offer;
 global using FluentValidation.AspNetCore;
-
-
+global using E_Commerce.Authorization;
+global using Microsoft.AspNetCore.Identity.UI.Services;
+global using Microsoft.AspNetCore.RateLimiting;
+global using System.Threading.RateLimiting;

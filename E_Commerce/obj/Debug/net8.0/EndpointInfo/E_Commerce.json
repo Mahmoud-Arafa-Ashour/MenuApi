@@ -5,7 +5,7 @@
     "version": "1.0"
   },
   "paths": {
-    "/Me": {
+    "/api/Account/Info": {
       "get": {
         "tags": [
           "Account"
@@ -17,7 +17,7 @@
         }
       }
     },
-    "/Me/Update-Info": {
+    "/api/Account/UpdateInfo": {
       "put": {
         "tags": [
           "Account"
@@ -48,7 +48,7 @@
         }
       }
     },
-    "/Me/Change-Password": {
+    "/api/Account/ChangePassword": {
       "put": {
         "tags": [
           "Account"
@@ -84,24 +84,6 @@
         "tags": [
           "Category"
         ],
-        "parameters": [
-          {
-            "name": "PageNumber",
-            "in": "query",
-            "schema": {
-              "type": "integer",
-              "format": "int32"
-            }
-          },
-          {
-            "name": "PageSize",
-            "in": "query",
-            "schema": {
-              "type": "integer",
-              "format": "int32"
-            }
-          }
-        ],
         "responses": {
           "200": {
             "description": "OK"
@@ -109,7 +91,7 @@
         }
       }
     },
-    "/api/Category/GetByid/{id}": {
+    "/api/Category/GetByid": {
       "get": {
         "tags": [
           "Category"
@@ -117,8 +99,7 @@
         "parameters": [
           {
             "name": "id",
-            "in": "path",
-            "required": true,
+            "in": "query",
             "schema": {
               "type": "integer",
               "format": "int32"
@@ -170,7 +151,7 @@
         }
       }
     },
-    "/api/Category/Update/{id}": {
+    "/api/Category/Update": {
       "put": {
         "tags": [
           "Category"
@@ -178,8 +159,7 @@
         "parameters": [
           {
             "name": "id",
-            "in": "path",
-            "required": true,
+            "in": "query",
             "schema": {
               "type": "integer",
               "format": "int32"
@@ -219,7 +199,7 @@
         }
       }
     },
-    "/api/Category/Delete/{id}": {
+    "/api/Category/Delete": {
       "delete": {
         "tags": [
           "Category"
@@ -227,8 +207,7 @@
         "parameters": [
           {
             "name": "id",
-            "in": "path",
-            "required": true,
+            "in": "query",
             "schema": {
               "type": "integer",
               "format": "int32"
@@ -370,16 +349,31 @@
         }
       }
     },
-    "/api/Item/GetAll/{CatId}": {
+    "/api/Item/GetAll": {
       "get": {
         "tags": [
           "Item"
         ],
         "parameters": [
           {
+            "name": "PageNumber",
+            "in": "query",
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          },
+          {
+            "name": "PageSize",
+            "in": "query",
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          },
+          {
             "name": "CatId",
-            "in": "path",
-            "required": true,
+            "in": "query",
             "schema": {
               "type": "integer",
               "format": "int32"
@@ -393,7 +387,7 @@
         }
       }
     },
-    "/api/Item/Get/Get-Item": {
+    "/api/Item/Get": {
       "get": {
         "tags": [
           "Item"
@@ -423,7 +417,7 @@
         }
       }
     },
-    "/api/Item/Add/{Catid}": {
+    "/api/Item/Add": {
       "post": {
         "tags": [
           "Item"
@@ -431,8 +425,7 @@
         "parameters": [
           {
             "name": "Catid",
-            "in": "path",
-            "required": true,
+            "in": "query",
             "schema": {
               "type": "integer",
               "format": "int32"
@@ -485,7 +478,7 @@
         }
       }
     },
-    "/api/Item/Delete/{Catid}": {
+    "/api/Item/Delete": {
       "delete": {
         "tags": [
           "Item"
@@ -493,8 +486,7 @@
         "parameters": [
           {
             "name": "Catid",
-            "in": "path",
-            "required": true,
+            "in": "query",
             "schema": {
               "type": "integer",
               "format": "int32"
@@ -516,7 +508,7 @@
         }
       }
     },
-    "/api/Item/Update/{Catid}": {
+    "/api/Item/Update": {
       "put": {
         "tags": [
           "Item"
@@ -524,8 +516,7 @@
         "parameters": [
           {
             "name": "Catid",
-            "in": "path",
-            "required": true,
+            "in": "query",
             "schema": {
               "type": "integer",
               "format": "int32"
@@ -586,7 +577,7 @@
         }
       }
     },
-    "/api/Login": {
+    "/api/Login/Login": {
       "post": {
         "tags": [
           "Login"
@@ -617,7 +608,7 @@
         }
       }
     },
-    "/api/Login/refresh": {
+    "/api/Login/RefreshToken": {
       "post": {
         "tags": [
           "Login"
@@ -648,7 +639,7 @@
         }
       }
     },
-    "/api/Login/revoke-refresh-token": {
+    "/api/Login/RevokeRefreshToken": {
       "post": {
         "tags": [
           "Login"
@@ -710,7 +701,7 @@
         }
       }
     },
-    "/api/Login/confirm-email": {
+    "/api/Login/ConfirmEmailGet": {
       "get": {
         "tags": [
           "Login"
@@ -738,7 +729,7 @@
         }
       }
     },
-    "/api/Login/resent-confirm-email": {
+    "/api/Login/ResentConfirmEmail": {
       "post": {
         "tags": [
           "Login"
@@ -1116,6 +1107,61 @@
           }
         }
       }
+    },
+    "/api/Role/GetAllRoles": {
+      "get": {
+        "tags": [
+          "Role"
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/Role/GetActiveRoles": {
+      "get": {
+        "tags": [
+          "Role"
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/Role/AddRole": {
+      "post": {
+        "tags": [
+          "Role"
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/RoleRequest"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/RoleRequest"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/RoleRequest"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
     }
   },
   "components": {
@@ -1230,6 +1276,23 @@
         },
         "additionalProperties": false
       },
+      "RoleRequest": {
+        "type": "object",
+        "properties": {
+          "name": {
+            "type": "string",
+            "nullable": true
+          },
+          "permissions": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            },
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
       "UpdateProfileRequest": {
         "type": "object",
         "properties": {
@@ -1252,6 +1315,19 @@
         },
         "additionalProperties": false
       }
+    },
+    "securitySchemes": {
+      "Bearer": {
+        "type": "http",
+        "description": "Please add your token",
+        "scheme": "Bearer",
+        "bearerFormat": "JWT"
+      }
     }
-  }
+  },
+  "security": [
+    {
+      "Bearer": [ ]
+    }
+  ]
 }

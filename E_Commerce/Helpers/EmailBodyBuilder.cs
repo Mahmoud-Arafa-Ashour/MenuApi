@@ -1,6 +1,4 @@
-﻿using Microsoft.Extensions.Logging;
-
-namespace SurveyBasket.Helpers;
+﻿namespace SurveyBasket.Helpers;
 
 public static class EmailBodyBuilder
 {

@@ -13,9 +13,19 @@ builder.Services.AddCors(
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 builder.Services.AddDependencies(builder.Configuration);
+
+// Register the database seeder
+builder.Services.AddScoped<DatabaseSeeder>();
+
 var app = builder.Build();
-// Use CORS
-//app.UseCors("AllowAll");
+
+// Seed the database
+using (var scope = app.Services.CreateScope())
+{
+    var seeder = scope.ServiceProvider.GetRequiredService<DatabaseSeeder>();
+    await seeder.SeedAsync();
+}
+
 // Configure the HTTP request pipeline.
 if (app.Environment.IsDevelopment())
 {
@@ -29,6 +39,6 @@ app.UseRouting();
 
 app.UseAuthorization();
 app.UseExceptionHandler();
-
 app.MapControllers();
+app.UseRateLimiter();
 app.Run();

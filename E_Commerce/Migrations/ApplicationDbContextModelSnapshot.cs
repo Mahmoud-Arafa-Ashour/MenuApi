@@ -42,7 +42,7 @@ namespace E_Commerce.Migrations
                     b.HasIndex("Name")
                         .IsUnique();
 
-                    b.ToTable("Categories");
+                    b.ToTable("Categories", (string)null);
                 });
 
             modelBuilder.Entity("E_Commerce.Models.Discount", b =>
@@ -72,7 +72,7 @@ namespace E_Commerce.Migrations
                     b.HasIndex("ItemId")
                         .IsUnique();
 
-                    b.ToTable("Discounts");
+                    b.ToTable("Discounts", (string)null);
                 });
 
             modelBuilder.Entity("E_Commerce.Models.Item", b =>
@@ -108,7 +108,7 @@ namespace E_Commerce.Migrations
                     b.HasIndex("Name")
                         .IsUnique();
 
-                    b.ToTable("Items");
+                    b.ToTable("Items", (string)null);
                 });
 
             modelBuilder.Entity("E_Commerce.Models.Offer", b =>
@@ -141,7 +141,7 @@ namespace E_Commerce.Migrations
 
                     b.HasKey("Id");
 
-                    b.ToTable("Offers");
+                    b.ToTable("Offers", (string)null);
                 });
 
             modelBuilder.Entity("E_Commerce.Models.OfferItem", b =>
@@ -164,7 +164,60 @@ namespace E_Commerce.Migrations
 
                     b.HasIndex("ItemId");
 
-                    b.ToTable("OfferItems");
+                    b.ToTable("OfferItems", (string)null);
+                });
+
+            modelBuilder.Entity("E_Commerce.Persistant.ApplicationRole", b =>
+                {
+                    b.Property<string>("Id")
+                        .HasColumnType("nvarchar(450)");
+
+                    b.Property<string>("ConcurrencyStamp")
+                        .IsConcurrencyToken()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<bool>("IsDeleted")
+                        .HasColumnType("bit");
+
+                    b.Property<string>("Name")
+                        .HasMaxLength(256)
+                        .HasColumnType("nvarchar(256)");
+
+                    b.Property<string>("NormalizedName")
+                        .HasMaxLength(256)
+                        .HasColumnType("nvarchar(256)");
+
+                    b.Property<bool>("isDefault")
+                        .HasColumnType("bit");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("NormalizedName")
+                        .IsUnique()
+                        .HasDatabaseName("RoleNameIndex")
+                        .HasFilter("[NormalizedName] IS NOT NULL");
+
+                    b.ToTable("AspNetRoles", (string)null);
+
+                    b.HasData(
+                        new
+                        {
+                            Id = "01969f7b-622a-7fd8-a041-5777b032bfa9",
+                            ConcurrencyStamp = "01969f7b-622a-7fd8-a041-5778339daaab",
+                            IsDeleted = false,
+                            Name = "Admin",
+                            NormalizedName = "ADMIN",
+                            isDefault = false
+                        },
+                        new
+                        {
+                            Id = "01969f7b-622a-7fd8-a041-5779e9a0ce8b",
+                            ConcurrencyStamp = "01969f7b-622a-7fd8-a041-577a817dd965",
+                            IsDeleted = false,
+                            Name = "Owner",
+                            NormalizedName = "OWNER",
+                            isDefault = true
+                        });
                 });
 
             modelBuilder.Entity("E_Commerce.Persistant.ApplicationUser", b =>
@@ -245,33 +298,28 @@ namespace E_Commerce.Migrations
                         .HasFilter("[NormalizedUserName] IS NOT NULL");
 
                     b.ToTable("AspNetUsers", (string)null);
-                });
 
-            modelBuilder.Entity("Microsoft.AspNetCore.Identity.IdentityRole", b =>
-                {
-                    b.Property<string>("Id")
-                        .HasColumnType("nvarchar(450)");
-
-                    b.Property<string>("ConcurrencyStamp")
-                        .IsConcurrencyToken()
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<string>("Name")
-                        .HasMaxLength(256)
-                        .HasColumnType("nvarchar(256)");
-
-                    b.Property<string>("NormalizedName")
-                        .HasMaxLength(256)
-                        .HasColumnType("nvarchar(256)");
-
-                    b.HasKey("Id");
-
-                    b.HasIndex("NormalizedName")
-                        .IsUnique()
-                        .HasDatabaseName("RoleNameIndex")
-                        .HasFilter("[NormalizedName] IS NOT NULL");
-
-                    b.ToTable("AspNetRoles", (string)null);
+                    b.HasData(
+                        new
+                        {
+                            Id = "01969f7b-622a-7fd8-a041-57743843d5a0",
+                            AccessFailedCount = 0,
+                            Adress = "Digital Menu Street",
+                            ConcurrencyStamp = "01969f7b-622a-7fd8-a041-5776080ebb3e",
+                            Email = "Admin@Gmail.com",
+                            EmailConfirmed = true,
+                            LockoutEnabled = false,
+                            Name = "Digital Menu",
+                            NormalizedEmail = "ADMIN@GMAIL.COM",
+                            NormalizedUserName = "ADMIN@GMAIL.COM",
+                            PasswordHash = "AQAAAAIAAYagAAAAECy+rhgyfgbJX9K1bcES+HAtPQfB1Z2fNq29LRXPIa1KnYZjAFz3gZ7p1kT0WwZm8A==",
+                            PhoneNumber = "01234567890",
+                            PhoneNumberConfirmed = false,
+                            ResturnatName = "Digital Menu Restaurant",
+                            SecurityStamp = "01969f7b622a7fd8a04157757267ddaf",
+                            TwoFactorEnabled = false,
+                            UserName = "Admin@Gmail.com"
+                        });
                 });
 
             modelBuilder.Entity("Microsoft.AspNetCore.Identity.IdentityRoleClaim<string>", b =>
@@ -297,6 +345,176 @@ namespace E_Commerce.Migrations
                     b.HasIndex("RoleId");
 
                     b.ToTable("AspNetRoleClaims", (string)null);
+
+                    b.HasData(
+                        new
+                        {
+                            Id = 1,
+                            ClaimType = "Permissions",
+                            ClaimValue = "info",
+                            RoleId = "01969f7b-622a-7fd8-a041-5777b032bfa9"
+                        },
+                        new
+                        {
+                            Id = 2,
+                            ClaimType = "Permissions",
+                            ClaimValue = "UpdateInfo",
+                            RoleId = "01969f7b-622a-7fd8-a041-5777b032bfa9"
+                        },
+                        new
+                        {
+                            Id = 3,
+                            ClaimType = "Permissions",
+                            ClaimValue = "ChangePassword",
+                            RoleId = "01969f7b-622a-7fd8-a041-5777b032bfa9"
+                        },
+                        new
+                        {
+                            Id = 4,
+                            ClaimType = "Permissions",
+                            ClaimValue = "Category:ReadAll",
+                            RoleId = "01969f7b-622a-7fd8-a041-5777b032bfa9"
+                        },
+                        new
+                        {
+                            Id = 5,
+                            ClaimType = "Permissions",
+                            ClaimValue = "Category:GetByid",
+                            RoleId = "01969f7b-622a-7fd8-a041-5777b032bfa9"
+                        },
+                        new
+                        {
+                            Id = 6,
+                            ClaimType = "Permissions",
+                            ClaimValue = "Category:Add",
+                            RoleId = "01969f7b-622a-7fd8-a041-5777b032bfa9"
+                        },
+                        new
+                        {
+                            Id = 7,
+                            ClaimType = "Permissions",
+                            ClaimValue = "Category:Update",
+                            RoleId = "01969f7b-622a-7fd8-a041-5777b032bfa9"
+                        },
+                        new
+                        {
+                            Id = 8,
+                            ClaimType = "Permissions",
+                            ClaimValue = "Category:Delete",
+                            RoleId = "01969f7b-622a-7fd8-a041-5777b032bfa9"
+                        },
+                        new
+                        {
+                            Id = 9,
+                            ClaimType = "Permissions",
+                            ClaimValue = "Discount:Add",
+                            RoleId = "01969f7b-622a-7fd8-a041-5777b032bfa9"
+                        },
+                        new
+                        {
+                            Id = 10,
+                            ClaimType = "Permissions",
+                            ClaimValue = "Discount:Update",
+                            RoleId = "01969f7b-622a-7fd8-a041-5777b032bfa9"
+                        },
+                        new
+                        {
+                            Id = 11,
+                            ClaimType = "Permissions",
+                            ClaimValue = "Discount:Delete",
+                            RoleId = "01969f7b-622a-7fd8-a041-5777b032bfa9"
+                        },
+                        new
+                        {
+                            Id = 12,
+                            ClaimType = "Permissions",
+                            ClaimValue = "Item:ReadAll",
+                            RoleId = "01969f7b-622a-7fd8-a041-5777b032bfa9"
+                        },
+                        new
+                        {
+                            Id = 13,
+                            ClaimType = "Permissions",
+                            ClaimValue = "Item:GetByid",
+                            RoleId = "01969f7b-622a-7fd8-a041-5777b032bfa9"
+                        },
+                        new
+                        {
+                            Id = 14,
+                            ClaimType = "Permissions",
+                            ClaimValue = "Item:Add",
+                            RoleId = "01969f7b-622a-7fd8-a041-5777b032bfa9"
+                        },
+                        new
+                        {
+                            Id = 15,
+                            ClaimType = "Permissions",
+                            ClaimValue = "Item:Update",
+                            RoleId = "01969f7b-622a-7fd8-a041-5777b032bfa9"
+                        },
+                        new
+                        {
+                            Id = 16,
+                            ClaimType = "Permissions",
+                            ClaimValue = "Item:Delete",
+                            RoleId = "01969f7b-622a-7fd8-a041-5777b032bfa9"
+                        },
+                        new
+                        {
+                            Id = 17,
+                            ClaimType = "Permissions",
+                            ClaimValue = "OfferItem:ReadAll",
+                            RoleId = "01969f7b-622a-7fd8-a041-5777b032bfa9"
+                        },
+                        new
+                        {
+                            Id = 18,
+                            ClaimType = "Permissions",
+                            ClaimValue = "OfferItem:Add",
+                            RoleId = "01969f7b-622a-7fd8-a041-5777b032bfa9"
+                        },
+                        new
+                        {
+                            Id = 19,
+                            ClaimType = "Permissions",
+                            ClaimValue = "OfferItem:Update",
+                            RoleId = "01969f7b-622a-7fd8-a041-5777b032bfa9"
+                        },
+                        new
+                        {
+                            Id = 20,
+                            ClaimType = "Permissions",
+                            ClaimValue = "Offer:ReadAll",
+                            RoleId = "01969f7b-622a-7fd8-a041-5777b032bfa9"
+                        },
+                        new
+                        {
+                            Id = 21,
+                            ClaimType = "Permissions",
+                            ClaimValue = "Offer:GetByid",
+                            RoleId = "01969f7b-622a-7fd8-a041-5777b032bfa9"
+                        },
+                        new
+                        {
+                            Id = 22,
+                            ClaimType = "Permissions",
+                            ClaimValue = "Offer:Add",
+                            RoleId = "01969f7b-622a-7fd8-a041-5777b032bfa9"
+                        },
+                        new
+                        {
+                            Id = 23,
+                            ClaimType = "Permissions",
+                            ClaimValue = "Offer:Update",
+                            RoleId = "01969f7b-622a-7fd8-a041-5777b032bfa9"
+                        },
+                        new
+                        {
+                            Id = 24,
+                            ClaimType = "Permissions",
+                            ClaimValue = "Offer:Delete",
+                            RoleId = "01969f7b-622a-7fd8-a041-5777b032bfa9"
+                        });
                 });
 
             modelBuilder.Entity("Microsoft.AspNetCore.Identity.IdentityUserClaim<string>", b =>
@@ -359,6 +577,13 @@ namespace E_Commerce.Migrations
                     b.HasIndex("RoleId");
 
                     b.ToTable("AspNetUserRoles", (string)null);
+
+                    b.HasData(
+                        new
+                        {
+                            UserId = "01969f7b-622a-7fd8-a041-57743843d5a0",
+                            RoleId = "01969f7b-622a-7fd8-a041-5777b032bfa9"
+                        });
                 });
 
             modelBuilder.Entity("Microsoft.AspNetCore.Identity.IdentityUserToken<string>", b =>
@@ -476,7 +701,7 @@ namespace E_Commerce.Migrations
 
             modelBuilder.Entity("Microsoft.AspNetCore.Identity.IdentityRoleClaim<string>", b =>
                 {
-                    b.HasOne("Microsoft.AspNetCore.Identity.IdentityRole", null)
+                    b.HasOne("E_Commerce.Persistant.ApplicationRole", null)
                         .WithMany()
                         .HasForeignKey("RoleId")
                         .OnDelete(DeleteBehavior.Cascade)
@@ -503,7 +728,7 @@ namespace E_Commerce.Migrations
 
             modelBuilder.Entity("Microsoft.AspNetCore.Identity.IdentityUserRole<string>", b =>
                 {
-                    b.HasOne("Microsoft.AspNetCore.Identity.IdentityRole", null)
+                    b.HasOne("E_Commerce.Persistant.ApplicationRole", null)
                         .WithMany()
                         .HasForeignKey("RoleId")
                         .OnDelete(DeleteBehavior.Cascade)

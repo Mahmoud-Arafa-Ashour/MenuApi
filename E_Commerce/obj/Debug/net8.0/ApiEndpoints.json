@@ -1,5 +1,47 @@
 [
   {
+    "ContainingType": "E_Commerce.Controllers.AccountController",
+    "Method": "ChangePassword",
+    "RelativePath": "api/Account/ChangePassword",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "requset",
+        "Type": "E_Commerce.Contracts.User.ChangePasswordRequset",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "E_Commerce.Controllers.AccountController",
+    "Method": "Info",
+    "RelativePath": "api/Account/Info",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "E_Commerce.Controllers.AccountController",
+    "Method": "UpdateInfo",
+    "RelativePath": "api/Account/UpdateInfo",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "request",
+        "Type": "E_Commerce.Contracts.User.UpdateProfileRequest",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
     "ContainingType": "E_Commerce.Controllers.CategoryController",
     "Method": "Add",
     "RelativePath": "api/Category/Add",
@@ -23,7 +65,7 @@
   {
     "ContainingType": "E_Commerce.Controllers.CategoryController",
     "Method": "Delete",
-    "RelativePath": "api/Category/Delete/{id}",
+    "RelativePath": "api/Category/Delete",
     "HttpMethod": "DELETE",
     "IsController": true,
     "Order": 0,
@@ -31,7 +73,7 @@
       {
         "Name": "id",
         "Type": "System.Int32",
-        "IsRequired": true
+        "IsRequired": false
       }
     ],
     "ReturnTypes": []
@@ -43,24 +85,13 @@
     "HttpMethod": "GET",
     "IsController": true,
     "Order": 0,
-    "Parameters": [
-      {
-        "Name": "PageNumber",
-        "Type": "System.Int32",
-        "IsRequired": false
-      },
-      {
-        "Name": "PageSize",
-        "Type": "System.Int32",
-        "IsRequired": false
-      }
-    ],
+    "Parameters": [],
     "ReturnTypes": []
   },
   {
     "ContainingType": "E_Commerce.Controllers.CategoryController",
     "Method": "GetByid",
-    "RelativePath": "api/Category/GetByid/{id}",
+    "RelativePath": "api/Category/GetByid",
     "HttpMethod": "GET",
     "IsController": true,
     "Order": 0,
@@ -68,7 +99,7 @@
       {
         "Name": "id",
         "Type": "System.Int32",
-        "IsRequired": true
+        "IsRequired": false
       }
     ],
     "ReturnTypes": []
@@ -76,7 +107,7 @@
   {
     "ContainingType": "E_Commerce.Controllers.CategoryController",
     "Method": "Update",
-    "RelativePath": "api/Category/Update/{id}",
+    "RelativePath": "api/Category/Update",
     "HttpMethod": "PUT",
     "IsController": true,
     "Order": 0,
@@ -84,7 +115,7 @@
       {
         "Name": "id",
         "Type": "System.Int32",
-        "IsRequired": true
+        "IsRequired": false
       },
       {
         "Name": "Name",
@@ -175,7 +206,7 @@
   {
     "ContainingType": "E_Commerce.Controllers.ItemController",
     "Method": "Add",
-    "RelativePath": "api/Item/Add/{Catid}",
+    "RelativePath": "api/Item/Add",
     "HttpMethod": "POST",
     "IsController": true,
     "Order": 0,
@@ -183,7 +214,7 @@
       {
         "Name": "Catid",
         "Type": "System.Int32",
-        "IsRequired": true
+        "IsRequired": false
       },
       {
         "Name": "Name",
@@ -211,7 +242,7 @@
   {
     "ContainingType": "E_Commerce.Controllers.ItemController",
     "Method": "Delete",
-    "RelativePath": "api/Item/Delete/{Catid}",
+    "RelativePath": "api/Item/Delete",
     "HttpMethod": "DELETE",
     "IsController": true,
     "Order": 0,
@@ -219,7 +250,7 @@
       {
         "Name": "Catid",
         "Type": "System.Int32",
-        "IsRequired": true
+        "IsRequired": false
       },
       {
         "Name": "id",
@@ -232,7 +263,7 @@
   {
     "ContainingType": "E_Commerce.Controllers.ItemController",
     "Method": "Get",
-    "RelativePath": "api/Item/Get/Get-Item",
+    "RelativePath": "api/Item/Get",
     "HttpMethod": "GET",
     "IsController": true,
     "Order": 0,
@@ -253,15 +284,25 @@
   {
     "ContainingType": "E_Commerce.Controllers.ItemController",
     "Method": "GetAll",
-    "RelativePath": "api/Item/GetAll/{CatId}",
+    "RelativePath": "api/Item/GetAll",
     "HttpMethod": "GET",
     "IsController": true,
     "Order": 0,
     "Parameters": [
       {
+        "Name": "PageNumber",
+        "Type": "System.Int32",
+        "IsRequired": false
+      },
+      {
+        "Name": "PageSize",
+        "Type": "System.Int32",
+        "IsRequired": false
+      },
+      {
         "Name": "CatId",
         "Type": "System.Int32",
-        "IsRequired": true
+        "IsRequired": false
       }
     ],
     "ReturnTypes": []
@@ -269,7 +310,7 @@
   {
     "ContainingType": "E_Commerce.Controllers.ItemController",
     "Method": "Update",
-    "RelativePath": "api/Item/Update/{Catid}",
+    "RelativePath": "api/Item/Update",
     "HttpMethod": "PUT",
     "IsController": true,
     "Order": 0,
@@ -277,7 +318,7 @@
       {
         "Name": "Catid",
         "Type": "System.Int32",
-        "IsRequired": true
+        "IsRequired": false
       },
       {
         "Name": "id",
@@ -309,24 +350,8 @@
   },
   {
     "ContainingType": "E_Commerce.Controllers.LoginController",
-    "Method": "LoginAsync",
-    "RelativePath": "api/Login",
-    "HttpMethod": "POST",
-    "IsController": true,
-    "Order": 0,
-    "Parameters": [
-      {
-        "Name": "request",
-        "Type": "E_Commerce.Contracts.Categories.LoginRequest",
-        "IsRequired": true
-      }
-    ],
-    "ReturnTypes": []
-  },
-  {
-    "ContainingType": "E_Commerce.Controllers.LoginController",
     "Method": "ConfirmEmailGet",
-    "RelativePath": "api/Login/confirm-email",
+    "RelativePath": "api/Login/ConfirmEmailGet",
     "HttpMethod": "GET",
     "IsController": true,
     "Order": 0,
@@ -346,8 +371,24 @@
   },
   {
     "ContainingType": "E_Commerce.Controllers.LoginController",
+    "Method": "LoginAsync",
+    "RelativePath": "api/Login/Login",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "request",
+        "Type": "E_Commerce.Contracts.Categories.LoginRequest",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "E_Commerce.Controllers.LoginController",
     "Method": "RefreshTokenAsync",
-    "RelativePath": "api/Login/refresh",
+    "RelativePath": "api/Login/RefreshToken",
     "HttpMethod": "POST",
     "IsController": true,
     "Order": 0,
@@ -379,7 +420,7 @@
   {
     "ContainingType": "E_Commerce.Controllers.LoginController",
     "Method": "ResentConfirmEmailAsync",
-    "RelativePath": "api/Login/resent-confirm-email",
+    "RelativePath": "api/Login/ResentConfirmEmail",
     "HttpMethod": "POST",
     "IsController": true,
     "Order": 0,
@@ -395,7 +436,7 @@
   {
     "ContainingType": "E_Commerce.Controllers.LoginController",
     "Method": "RevokeRefreshTokenAsync",
-    "RelativePath": "api/Login/revoke-refresh-token",
+    "RelativePath": "api/Login/RevokeRefreshToken",
     "HttpMethod": "POST",
     "IsController": true,
     "Order": 0,
@@ -626,9 +667,25 @@
     "ReturnTypes": []
   },
   {
-    "ContainingType": "E_Commerce.Controllers.AccountController",
-    "Method": "Info",
-    "RelativePath": "Me",
+    "ContainingType": "E_Commerce.Controllers.RoleController",
+    "Method": "AddRole",
+    "RelativePath": "api/Role/AddRole",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "roleRequest",
+        "Type": "E_Commerce.Contracts.Role.RoleRequest",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "E_Commerce.Controllers.RoleController",
+    "Method": "GetActiveRoles",
+    "RelativePath": "api/Role/GetActiveRoles",
     "HttpMethod": "GET",
     "IsController": true,
     "Order": 0,
@@ -636,35 +693,13 @@
     "ReturnTypes": []
   },
   {
-    "ContainingType": "E_Commerce.Controllers.AccountController",
-    "Method": "ChangePassword",
-    "RelativePath": "Me/Change-Password",
-    "HttpMethod": "PUT",
+    "ContainingType": "E_Commerce.Controllers.RoleController",
+    "Method": "GetAllRoles",
+    "RelativePath": "api/Role/GetAllRoles",
+    "HttpMethod": "GET",
     "IsController": true,
     "Order": 0,
-    "Parameters": [
-      {
-        "Name": "requset",
-        "Type": "E_Commerce.Contracts.User.ChangePasswordRequset",
-        "IsRequired": true
-      }
-    ],
-    "ReturnTypes": []
-  },
-  {
-    "ContainingType": "E_Commerce.Controllers.AccountController",
-    "Method": "UpdateInfo",
-    "RelativePath": "Me/Update-Info",
-    "HttpMethod": "PUT",
-    "IsController": true,
-    "Order": 0,
-    "Parameters": [
-      {
-        "Name": "request",
-        "Type": "E_Commerce.Contracts.User.UpdateProfileRequest",
-        "IsRequired": true
-      }
-    ],
+    "Parameters": [],
     "ReturnTypes": []
   }
 ]

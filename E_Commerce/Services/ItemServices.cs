@@ -1,4 +1,6 @@
-﻿namespace E_Commerce.Services
+﻿using E_Commerce.Abstractions;
+
+namespace E_Commerce.Services
 {
     public class ItemServices(ApplicationDbContext dbContext , IWebHostEnvironment environment) : IItemServices
     {
@@ -7,17 +9,11 @@
         private readonly IWebHostEnvironment _environment = environment;
         #endregion
         #region Methods
-        public async Task<Result<IEnumerable<ItemResponse>>> GetAllItemsAsync(int CatId)
+        public async Task<Result<PaginatedData<ItemResponse>>> GetAllItemsAsync(RequestedFilters filters, int catid, CancellationToken cancellationToken)
         {
-            var IsExistedCategory = await _dbContext.Categories.FindAsync(CatId);
-            if (IsExistedCategory is null)
-            {
-                return Result.Failure<IEnumerable<ItemResponse>>(CategoryErrors.EmptyCategory);
-            }
-            var Items = await _dbContext.Items.Where(x => x.CategoryId == CatId).ProjectToType<ItemResponse>().ToListAsync();
-            if (!Items.Any())
-                return Result.Failure<IEnumerable<ItemResponse>>(ItemErrors.Emptyitem);
-            return Result.Success<IEnumerable<ItemResponse>>(Items);
+            var result = _dbContext.Items.Where(x => x.CategoryId == catid).ProjectToType<ItemResponse>();
+            var paginatedData = await PaginatedData<ItemResponse>.CreateAsync(result, filters.PageNumber, filters.PageSize , cancellationToken);
+            return Result.Success(paginatedData);
         }
         public async Task<Result<ItemResponse>> GetItemAsync(int Catid, int id)
         {
